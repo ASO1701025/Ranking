@@ -12,20 +12,20 @@
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <title>iPhone 6/7/8 – 4</title>
+    <title>main</title>
     <style id="applicationStylesheet" type="text/css">
         body {
             margin: 0;
             padding: 0;
         }
         :root {
-            --web-view-ids: iPhone_6_7_8___4;
+            --web-view-ids: main;
         }
-        #iPhone_6_7_8___4 * {
+        #main * {
             margin: 0;
             padding: 0;
         }
-        #iPhone_6_7_8___4 {
+        #main {
             position: absolute;
             box-sizing: border-box;
             background: #E5E5E5;
@@ -36,9 +36,18 @@
             margin: 0;
             padding: 0;
             opacity: 1;
-            --web-view-name: iPhone 6/7/8 – 4;
-            --web-view-id: iPhone_6_7_8___4;
+            --web-view-name: main;
+            --web-view-id: main;
             --web-enable-deep-linking: true;
+        }
+        #______ {
+            opacity: 1;
+            position: absolute;
+            width: 230px;
+            height: 991px;
+            left: 73px;
+            top: 332px;
+            overflow: visible;
         }
         #____11 {
             opacity: 1;
@@ -55,8 +64,8 @@
             overflow: visible;
             width: 230px;
             height: 127px;
-            left: 73px;
-            top: 315px;
+            left: 0px;
+            top: 0px;
         }
         #____12 {
             opacity: 1;
@@ -73,8 +82,8 @@
             overflow: visible;
             width: 230px;
             height: 127px;
-            left: 73px;
-            top: 474px;
+            left: 0px;
+            top: 159px;
         }
         #____13 {
             opacity: 1;
@@ -91,8 +100,8 @@
             overflow: visible;
             width: 230px;
             height: 127px;
-            left: 73px;
-            top: 663px;
+            left: 0px;
+            top: 348px;
         }
         #____14 {
             opacity: 1;
@@ -109,8 +118,8 @@
             overflow: visible;
             width: 230px;
             height: 127px;
-            left: 73px;
-            top: 835px;
+            left: 0px;
+            top: 520px;
         }
         #____15 {
             opacity: 1;
@@ -127,8 +136,8 @@
             overflow: visible;
             width: 230px;
             height: 127px;
-            left: 73px;
-            top: 1007px;
+            left: 0px;
+            top: 692px;
         }
         #____16 {
             opacity: 1;
@@ -145,8 +154,8 @@
             overflow: visible;
             width: 230px;
             height: 127px;
-            left: 73px;
-            top: 1179px;
+            left: 0px;
+            top: 864px;
         }
         #____8 {
             opacity: 1;
@@ -166,17 +175,36 @@
             left: 26px;
             top: 603px;
         }
-        #____17 {
+        #main_image {
             opacity: 1;
-            fill: rgba(255,255,255,1);
+            fill: url(#main_back.png);
+            stroke: rgb(112, 112, 112);
+            stroke-width: 1px;
+            stroke-linejoin: miter;
+            stroke-linecap: butt;
+            stroke-miterlimit: 4;
+            shape-rendering: auto;
         }
-        .____17 {
+        .main_image {
             position: absolute;
             overflow: visible;
             width: 375px;
-            height: 282px;
+            height: 238px;
             left: 0px;
-            top: 0px;
+            top: 60px;
+        }
+        #____39 {
+            opacity: 1;
+            filter: blur(2px);
+            fill: rgba(255,255,255,1);
+        }
+        .____39 {
+            position: absolute;
+            overflow: visible;
+            width: 375px;
+            height: 237.72px;
+            left: 0px;
+            top: 60px;
         }
         #Home {
             opacity: 1;
@@ -264,7 +292,7 @@
             overflow: visible;
         }
         #____10 {
-            opacity: 1;
+            opacity: 0.7;
             fill: rgba(255,255,255,1);
             stroke: rgb(112, 112, 112);
             stroke-width: 1px;
@@ -285,12 +313,12 @@
             opacity: 1;
             position: absolute;
             left: 20px;
-            top: 56px;
+            top: 54px;
             box-sizing: border-box;
             margin: 0;
             padding: 0;
             overflow: visible;
-            width: 109px;
+            width: 99px;
             white-space: nowrap;
             text-align: left;
             font-family: Verdana;
@@ -303,12 +331,12 @@
             opacity: 1;
             position: absolute;
             left: 20px;
-            top: 86px;
+            top: 84px;
             box-sizing: border-box;
             margin: 0;
             padding: 0;
             overflow: visible;
-            width: 157px;
+            width: 141px;
             white-space: nowrap;
             text-align: left;
             font-family: Verdana;
@@ -321,12 +349,12 @@
             opacity: 1;
             position: absolute;
             left: 20px;
-            top: 116px;
+            top: 114px;
             box-sizing: border-box;
             margin: 0;
             padding: 0;
             overflow: visible;
-            width: 133px;
+            width: 111px;
             white-space: nowrap;
             text-align: left;
             font-family: Verdana;
@@ -339,12 +367,12 @@
             opacity: 1;
             position: absolute;
             left: 20px;
-            top: 146px;
+            top: 144px;
             box-sizing: border-box;
             margin: 0;
             padding: 0;
             overflow: visible;
-            width: 95px;
+            width: 83px;
             white-space: nowrap;
             text-align: left;
             font-family: Verdana;
@@ -357,12 +385,12 @@
             opacity: 1;
             position: absolute;
             left: 20px;
-            top: 176px;
+            top: 174px;
             box-sizing: border-box;
             margin: 0;
             padding: 0;
             overflow: visible;
-            width: 61px;
+            width: 52px;
             white-space: nowrap;
             text-align: left;
             font-family: Verdana;
@@ -371,16 +399,16 @@
             font-size: 12px;
             color: rgba(0,0,0,1);
         }
-        #______A3_Text_24 {
+        #______A3_Text_26 {
             opacity: 1;
             position: absolute;
             left: 265px;
-            top: 176px;
+            top: 174px;
             box-sizing: border-box;
             margin: 0;
             padding: 0;
             overflow: visible;
-            width: 61px;
+            width: 47px;
             white-space: nowrap;
             text-align: left;
             font-family: Verdana;
@@ -399,8 +427,8 @@
             overflow: visible;
         }
         #____9 {
-            opacity: 0.5;
-            fill: rgba(251,146,9,1);
+            opacity: 1;
+            fill: rgba(255,255,255,1);
             stroke: rgb(112, 112, 112);
             stroke-width: 1px;
             stroke-linejoin: miter;
@@ -416,11 +444,29 @@
             left: 0px;
             top: 0px;
         }
-        #______ {
+        #____40 {
+            opacity: 0.5;
+            fill: rgba(251,146,9,1);
+            stroke: rgb(112, 112, 112);
+            stroke-width: 1px;
+            stroke-linejoin: miter;
+            stroke-linecap: butt;
+            stroke-miterlimit: 4;
+            shape-rendering: auto;
+        }
+        .____40 {
+            position: absolute;
+            overflow: visible;
+            width: 90px;
+            height: 30px;
+            left: 0px;
+            top: 0px;
+        }
+        #_______A3_Text_27 {
             opacity: 1;
             position: absolute;
             left: 9px;
-            top: 9px;
+            top: 7px;
             box-sizing: border-box;
             margin: 0;
             padding: 0;
@@ -447,12 +493,12 @@
         .____22 {
             position: absolute;
             overflow: visible;
-            width: 375px;
-            height: 60px;
+            width: 377px;
+            height: 62px;
             left: 0px;
             top: 0px;
         }
-        #____7 {
+        #___4 {
             opacity: 0.15;
             fill: rgba(220,220,220,1);
             stroke: rgb(112, 112, 112);
@@ -462,13 +508,14 @@
             stroke-miterlimit: 4;
             shape-rendering: auto;
         }
-        .____7 {
-            position: absolute;
+        .___4 {
+            transform: matrix(1,0,0,1,0,0);
             overflow: visible;
-            width: 377px;
-            height: 62px;
-            left: 0px;
+            position: absolute;
             top: 0px;
+            left: 0px;
+            width: 376px;
+            height: 61px;
         }
         #Instant_Ranking {
             opacity: 1;
@@ -488,40 +535,121 @@
             font-size: 30px;
             color: rgba(251,146,9,1);
         }
+        #__________A3_Text_29 {
+            opacity: 1;
+            position: absolute;
+            left: 90px;
+            top: 343px;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            overflow: visible;
+            width: 123px;
+            white-space: nowrap;
+            text-align: left;
+            font-family: Verdana;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            color: rgba(0,0,0,1);
+        }
+        #ID1_ {
+            opacity: 1;
+            position: absolute;
+            left: 90px;
+            top: 372px;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            overflow: visible;
+            width: 21px;
+            white-space: nowrap;
+            text-align: left;
+            font-family: Verdana;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            color: rgba(0,0,0,1);
+        }
+        #ID2_ {
+            opacity: 1;
+            position: absolute;
+            left: 90px;
+            top: 393px;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            overflow: visible;
+            width: 21px;
+            white-space: nowrap;
+            text-align: left;
+            font-family: Verdana;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            color: rgba(0,0,0,1);
+        }
+        #ID3_ {
+            opacity: 1;
+            position: absolute;
+            left: 90px;
+            top: 414px;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            overflow: visible;
+            width: 21px;
+            white-space: nowrap;
+            text-align: left;
+            font-family: Verdana;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            color: rgba(0,0,0,1);
+        }
     </style>
 </head>
 <body>
-<div id="iPhone_6_7_8___4">
-    <svg class="____11">
-        <rect id="____11" rx="24" ry="24" x="0" y="0" width="230" height="127">
-        </rect>
-    </svg>
-    <svg class="____12">
-        <rect id="____12" rx="24" ry="24" x="0" y="0" width="230" height="127">
-        </rect>
-    </svg>
-    <svg class="____13">
-        <rect id="____13" rx="24" ry="24" x="0" y="0" width="230" height="127">
-        </rect>
-    </svg>
-    <svg class="____14">
-        <rect id="____14" rx="24" ry="24" x="0" y="0" width="230" height="127">
-        </rect>
-    </svg>
-    <svg class="____15">
-        <rect id="____15" rx="24" ry="24" x="0" y="0" width="230" height="127">
-        </rect>
-    </svg>
-    <svg class="____16">
-        <rect id="____16" rx="24" ry="24" x="0" y="0" width="230" height="127">
-        </rect>
-    </svg>
+<div id="main">
+    <div id="______">
+        <svg class="____11">
+            <rect id="____11" rx="24" ry="24" x="0" y="0" width="230" height="127">
+            </rect>
+        </svg>
+        <svg class="____12">
+            <rect id="____12" rx="24" ry="24" x="0" y="0" width="230" height="127">
+            </rect>
+        </svg>
+        <svg class="____13">
+            <rect id="____13" rx="24" ry="24" x="0" y="0" width="230" height="127">
+            </rect>
+        </svg>
+        <svg class="____14">
+            <rect id="____14" rx="24" ry="24" x="0" y="0" width="230" height="127">
+            </rect>
+        </svg>
+        <svg class="____15">
+            <rect id="____15" rx="24" ry="24" x="0" y="0" width="230" height="127">
+            </rect>
+        </svg>
+        <svg class="____16">
+            <rect id="____16" rx="24" ry="24" x="0" y="0" width="230" height="127">
+            </rect>
+        </svg>
+    </div>
     <svg class="____8">
         <rect id="____8" rx="0" ry="0" x="0" y="0" width="324" height="40">
         </rect>
     </svg>
-    <svg class="____17">
-        <rect id="____17" rx="0" ry="0" x="0" y="0" width="375" height="282">
+    <svg class="main_image">
+        <pattern elementId="main_image_A3_Rectangle_30" id="main_image_A3_Rectangle_30_pattern" x="0" y="0" width="100%" height="100%">
+            <image x="0" y="0" width="100%" height="100%" href="main_back.png" xlink:href="main_image_A3_Rectangle_30_pattern.png"></image>
+        </pattern>
+        <rect id="main_image" rx="0" ry="0" x="0" y="0" width="375" height="238">
+        </rect>
+    </svg>
+    <svg class="____39">
+        <rect id="____39" rx="0" ry="0" x="0" y="0" width="375" height="237.72">
         </rect>
     </svg>
     <div id="Home">
@@ -556,7 +684,7 @@
         <div id="_____">
             <span>今季アニメ</span>
         </div>
-        <div id="______A3_Text_24">
+        <div id="______A3_Text_26">
             <span>もっと見る</span>
         </div>
         <div id="______1">
@@ -564,7 +692,11 @@
                 <rect id="____9" rx="10" ry="10" x="0" y="0" width="90" height="30">
                 </rect>
             </svg>
-            <div id="______">
+            <svg class="____40">
+                <rect id="____40" rx="10" ry="10" x="0" y="0" width="90" height="30">
+                </rect>
+            </svg>
+            <div id="_______A3_Text_27">
                 <span>投票期間一覧</span>
             </div>
         </div>
@@ -573,14 +705,25 @@
         <rect id="____22" rx="0" ry="0" x="0" y="0" width="375" height="60">
         </rect>
     </svg>
-    <svg class="____7">
-        <rect id="____7" rx="0" ry="0" x="0" y="0" width="375" height="60">
-        </rect>
+    <svg class="___4" viewBox="0 0 375 60">
+        <path id="___4" d="M 0 0 L 375 0 L 375 60 L 0 60 L 0 0 Z">
+        </path>
     </svg>
     <div id="Instant_Ranking">
         <span>Instant Ranking</span>
     </div>
+    <div id="__________A3_Text_29">
+        <span>今見に行きたい映画</span>
+    </div>
+    <div id="ID1_">
+        <span>1位</span>
+    </div>
+    <div id="ID2_">
+        <span>2位</span>
+    </div>
+    <div id="ID3_">
+        <span>3位</span>
+    </div>
 </div>
 </body>
 </html>
-

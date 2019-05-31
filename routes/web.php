@@ -20,6 +20,10 @@ Route::get('/login', function(){
 });
 
 Route::get('/', function(){
+    return view('home') ;
+});
+
+Route::get('/top', function(){
     return view('Top') ;
 });
 
@@ -38,4 +42,6 @@ Route::get('/thema1', function(){
 Route::get('/thema2', function(){
     return view('thema2') ;
 });
+
+
 
