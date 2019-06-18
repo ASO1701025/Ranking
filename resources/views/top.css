@@ -1,0 +1,20 @@
+body{
+    background-color: #FB9209;
+}
+.button {
+    display       : inline-block;
+    border-radius : 7%;          /* 角丸       */
+    font-size     : 16pt;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 4px 63px;   /* 余白       */
+    background    : #ffffff;     /* 背景色     */
+    color         : #fb9209;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    transition    : .3s;         /* なめらか変化 */
+    border        : 2px solid #ffffff;    /* 枠の指定 */
+}
+.button:hover {
+    color         : #ffffff;     /* 背景色     */
+    background    : #fb9209;     /* 文字色     */
+}

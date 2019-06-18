@@ -11,37 +11,31 @@
 |
 */
 
-Route::get('/user', function () {
-    return view('user');
-});
+
+
+
 
 Route::get('/login', function(){
-   return view('login') ;
+    return view('login') ;
 });
 
-Route::get('/', function(){
-    return view('home') ;
-});
 
-Route::get('/top', function(){
-    return view('Top') ;
-});
 
-Route::get('/new', function(){
-    return view('new') ;
-});
 
-Route::get('/postRan', function(){
-    return view('postRan') ;
-});
+Route::get('/', 'instantrankingController@top1');
 
-Route::get('/thema1', function(){
-    return view('thema1') ;
-});
+Route::get('/list', 'instantrankingController@themalist');
 
-Route::get('/thema2', function(){
-    return view('thema2') ;
-});
+Route::get('/post', 'instantrankingController@themapost');
+
+Route::get('/user', 'instantrankingController@user');
+
+Route::get('/shinki', 'instantrankingController@shinki');
+
+Route::get('/ditail', 'instantrankingController@ditail');
+
+Route::get('/home', 'instantrankingController@home');
+
 
 
 
