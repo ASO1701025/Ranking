@@ -49,4 +49,12 @@ class instantrankingController extends Controller
         return view('InstantRanking.top');
     }
 
+    public function ranking(){
+        return view('InstantRanking.ranking');
+    }
+
+    public function login(){
+        return view('InstantRanking.login');
+    }
+
 }

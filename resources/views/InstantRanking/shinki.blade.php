@@ -5,11 +5,9 @@
 if (strpos($_SERVER['HTTP_USER_AGENT'], 'iPhone') !== false) {
     if ($_REQUEST['view'] == 'pc') {
     readfile('index_pc.html');
-    } else
+    } else{
         readfile('index_touch.html');
-        }
-     else {
-    readfile('index_pc.html');
+    }
 }
 ?>
         <!DOCTYPE HTML>
@@ -20,7 +18,7 @@ if (strpos($_SERVER['HTTP_USER_AGENT'], 'iPhone') !== false) {
 
         }
         body {
-            background-image: url("../sinki.jpg");
+            /**background-image: url("../sinki.jpg");**/
             background-size: cover;
             background-attachment: fixed;
             background-position: center center;
@@ -29,7 +27,7 @@ if (strpos($_SERVER['HTTP_USER_AGENT'], 'iPhone') !== false) {
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Instant Ranking 新規登録画面</title>
-    <link rel="stylesheet" href="style.css">
+    <!--link rel="stylesheet" href="style.css"-->
 
     <!-- Bootstrap読み込み（スタイリングのため） -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
@@ -56,7 +54,7 @@ if (strpos($_SERVER['HTTP_USER_AGENT'], 'iPhone') !== false) {
             <input type="password" class="form-control" name="password" placeholder="パスワードの再確認" required />
         </div>
         <button type="submit" class="btn btn-default" name="signup">登録</button>
-        <br><a href="index.php">top</a>
+        <br><a href="./top.blade.php">top</a>
     </form>
 </div>
 </body>

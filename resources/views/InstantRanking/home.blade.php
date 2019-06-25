@@ -129,7 +129,7 @@
     <nav>
         <ul>
             <li><a href="./home">Home</a></li>
-            <li><a href="./ditail">Ranking</a></li>
+            <li><a href="./ranking">Ranking</a></li>
             <li><a href="./list">Thema</a></li>
             <li><a href="./user">User</a></li>
         </ul>

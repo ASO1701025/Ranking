@@ -58,39 +58,77 @@
                 width: 40px;
             }
 
+            .row {
+                display: flex;
+                width: 100%;
+            }
+
+            .col {
+                flex-basis: 50%;
+                display: flex;
+                flex-direction: column;
+            }
+            .col:not(:last-child) {
+                margin-right: 20px;
+            }
+
+            .card {
+                flex-grow: 1;
+                flex-shrink: 1;
+
+                width: 100%;
+                padding: 20px;
+                box-sizing: border-box;
+
+                box-shadow: rgba(0, 0, 0, .2) 1px 1px 5px;
+            }
+            .card:not(:last-child) {
+                margin-bottom: 20px;
+            }
+
         </style>
     </head>
 
     <body>
-    @section('content')
+
         <header id="caption" align="center">
             InstantRanking
         </header>
-        <div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333;" align="center">
-            <img src="../hukurou.png">
-            {{--{{$name}}--}}
-            <br>
-            <p>
-                {{--mail  {{$mail}}--}}
-            </p>
-        </div>
+
         <div>
-            <p style="color: #fb9209">投稿一覧</p>
-            <div style="border: 2pt solid #000000;border-radius: 20%;height: 100pt;width: 300pt;" align="center">
-                <p>〜〜〜〜〜〜ランキング</p>
+
+            <div style="border: 2pt solid #000000;border-radius: 20%;height: 150pt;width: 100%;" align="center">
+                <p>~~~~~ランキング</p>
             </div>
-            
+
+            <p style="color: #fb9209">投稿一覧</p>
+
+            <div class="row">
+                <div class="col">
+                    <div class="card">Card1</div>
+                    <div class="card">Card2</div>
+                    <div class="card">Card3</div>
+
+                </div>
+                <div class="col">
+                    <div class="card">Card4</div>
+                    <div class="card">Card5</div>
+                    <div class="card">Card6</div>
+                </div>
+
+            </div>
+
         </div>
         <footer>
             <nav>
                 <ul>
                     <li><a href="./home">Home</a></li>
-                    <li><a href="./ditail">Ranking</a></li>
+                    <li><a href="./ranking">Ranking</a></li>
                     <li><a href="./list">Thema</a></li>
                     <li><a href="./user">User</a></li>
                 </ul>
             </nav>
         </footer>
-    @show
+
     </body>
 </html>
