@@ -48,7 +48,7 @@ if (strpos($_SERVER['HTTP_USER_AGENT'], 'iPhone') !== false) {
             <!-- 新規登録ボタン -->
             <input type="submit" class="button" onclick="location.href='shinki.blade.php'" value="新規登録"><br>
             <!-- 空白 -->
-・            <!-- ログインボタン -->
+            <!-- ログインボタン -->
             <input type="submit" class="button" onclick="location.href='login.blade.php'" value="ログイン"><br>
 
         {{--db接続テスト--}}
