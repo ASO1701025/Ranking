@@ -29,9 +29,21 @@
                 <select name="genre">
                     <option value="食べ物">食べ物</option>
                     <option value="レジャー">レジャー</option>
-                </select></p>
+                </select>
+            </p>
             <input type="submit" value="投稿" id="button">
         </div>
+        {{--db接続テスト--}}
+           <?php  $res = null;$pg_conn = null;$sql = null;$date = null;
+            date_default_timezone_set('Asia/Tokyo');$date = date("Y-m-d");
+            $pg_conn = pg_connect("host=ec2-174-129-240-67.compute-1.amazonaws.com port=5432 dbname=d8hdi8o0nv2hqq user=idiprlkaujoahf password=b1459a0b24b0e4d1334f38a9a2cb9f81ad0a1ba719639bfb7e9b1ac0efd601ef");
+            if( $pg_conn ) {
+            	$sql = "INSERT INTO userinformation (username,password,address) VALUES ('shiki', 'password', 'nnnn@gmail.com')";
+                	$res = pg_query( $pg_conn, $sql);	var_dump($res);
+                	echo "接続できたよ！";
+            } else {	var_dump("接続できませんでした");}
+            pg_close($pg_conn);
+            ?>
     </form>
 
 </body>
