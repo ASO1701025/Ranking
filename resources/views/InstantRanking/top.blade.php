@@ -54,7 +54,9 @@ if (strpos($_SERVER['HTTP_USER_AGENT'], 'iPhone') !== false) {
             <!-- 空白 -->
             <!-- ログインボタン -->
             <input type="submit" class="button" onclick="location.href='login.blade.php'" value="ログイン"><br>
-
+        <?php
+        echo __FILE__;
+        ?>
         {{--db接続テスト--}}
 <!--        --><?php //// $res = null;$pg_conn = null;$sql = null;$date = null;　-->
 //        date_default_timezone_set('Asia/Tokyo');$date = date("Y-m-d");
