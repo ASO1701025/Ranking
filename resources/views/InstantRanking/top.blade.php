@@ -36,10 +36,9 @@ if (strpos($_SERVER['HTTP_USER_AGENT'], 'iPhone') !== false) {
                     echo "<br/>";
                 }
                 ?>
-                <img src="/app/storage/framework/views/hukurou.png" width="340" height="470"><br>
+                <img alt="テスト" src{{asset('/img/hukurou.png')}} width="340" height="470"><br>
                <img src="/resources/views/InstantRanking/hukurou.png" width="340" height="470"><br>
                <img src="App/resources/views/InstantRanking/hukurou.png" width="340" height="470"><br>
-
 
             </span>
             <!-- 空白 -->
