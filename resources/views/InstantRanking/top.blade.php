@@ -36,7 +36,7 @@ if (strpos($_SERVER['HTTP_USER_AGENT'], 'iPhone') !== false) {
                     echo "<br/>";
                 }
                 ?>
-                <img src="../../../storage/app/public/hukurou.png" width="340" height="470"><br>
+                <img src="/app/resources/views/InstantRanking/hukurou.png" width="340" height="470"><br>
             </span>
             <!-- 空白 -->
             <?php
