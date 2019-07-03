@@ -2,7 +2,7 @@
 <?php
 if (strpos($_SERVER['HTTP_USER_AGENT'], 'iPhone') !== false) {
     if ($_REQUEST['view'] == 'pc') {
-        readfile('/app/resources/InstanRanking/hukurou.png');
+        readfile('app/resources/views/InstantRanking/hukurou.png');
     }
 }
 ?>
