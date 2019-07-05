@@ -30,6 +30,8 @@ Route::get('/user', 'instantrankingController@user');
 
 Route::get('/shinki', 'instantrankingController@shinki');
 
+Route::post('/shinki', 'instantrankingController@shinki');
+
 Route::get('/ditail', 'instantrankingController@ditail');
 
 Route::get('/home', 'instantrankingController@home');

@@ -18,7 +18,7 @@ if (strpos($_SERVER['HTTP_USER_AGENT'], 'iPhone') !== false) {
     </head>
 
     <body>
-    <img src="views/InstantRanking/hukurou.png">
+    <img src="../hukurou.png">
     <!-- マスコット -->
     <div align="center">
         <form method="post">
