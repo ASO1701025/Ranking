@@ -45,7 +45,7 @@ if (strpos($_SERVER['HTTP_USER_AGENT'], 'iPhone') !== false) {
         date_default_timezone_set('Asia/Tokyo');$date = date("Y-m-d");
         $pg_conn = pg_connect("host=ec2-174-129-240-67.compute-1.amazonaws.com port=5432 dbname=d8hdi8o0nv2hqq user=idiprlkaujoahf password=b1459a0b24b0e4d1334f38a9a2cb9f81ad0a1ba719639bfb7e9b1ac0efd601ef");
         if( $pg_conn ) {
-            $sql = "INSERT INTO userinformation (username,password,address) VALUES('.{$user}.' , '.{$pass}.' , '.{$mail}.')";
+            $sql = "INSERT INTO userinformation (username,password,address) VALUES('{$user}' , '{$pass}' , '{$mail}')";
 
             var_dump($sql);
             // $res = pg_query( $pg_conn, $sql);var_dump($res);
