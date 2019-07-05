@@ -48,7 +48,7 @@ if (strpos($_SERVER['HTTP_USER_AGENT'], 'iPhone') !== false) {
             $sql = "INSERT INTO userinformation (username,password,address) VALUES('{$user}' , '{$pass}' , '{$mail}')";
 
             var_dump($sql);
-            // $res = pg_query( $pg_conn, $sql);var_dump($res);
+            $res = pg_query( $pg_conn, $sql);var_dump($res);
             echo "接続できたよ！";
         } else {	var_dump("接続できませんでした");}
         pg_close($pg_conn);
