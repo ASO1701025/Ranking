@@ -50,9 +50,11 @@ if (strpos($_SERVER['HTTP_USER_AGENT'], 'iPhone') !== false) {
             var_dump($sql);
             $res = pg_query( $pg_conn, $sql);var_dump($res);
             echo "接続できたよ！";
-        } else {	var_dump("接続できませんでした");}
-        pg_close($pg_conn);
-
+                pg_close($pg_conn);
+            header('Location: https://instantranking.herokuapp.com');
+            exit();
+        } else {	var_dump("接続できませんでした");
+                    pg_close($pg_conn);}
 }else{ ?>
 
 <div class="col-xs-6 col-xs-offset-3">

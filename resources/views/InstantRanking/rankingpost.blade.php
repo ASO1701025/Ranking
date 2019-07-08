@@ -27,7 +27,7 @@
             </p>
             <p>ジャンル
                 <select name="genre">
-                    <option value="食べ物">食べ物</option>
+                    <option value="1">食べ物</option>
                     <option value="レジャー">レジャー</option>
                 </select>
             </p>
