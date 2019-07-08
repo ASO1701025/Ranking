@@ -54,7 +54,7 @@
     <div align="center">
         <p>テーマ一覧</p>
         <p>
-            <a href="themapost" style="color: #fb9209;text-decoration: none">+</a>
+            <a href="rankingpost.blade.php" style="color: #fb9209;text-decoration: none">+</a>
             <select name="genre">
                 <option value="食べ物">食べ物</option>
                 <option value="レジャー">レジャー</option>

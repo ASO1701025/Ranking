@@ -20,6 +20,8 @@
 
 Route::get('/login', 'instantrankingController@login');
 
+Route::get('/ranp', 'instantrankingController@ranp');
+
 Route::get('/', 'instantrankingController@top1');
 
 Route::get('/list', 'instantrankingController@themalist');

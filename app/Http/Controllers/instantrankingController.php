@@ -57,4 +57,8 @@ class instantrankingController extends Controller
         return view('InstantRanking.login');
     }
 
+    public function ranp(){
+        return view('InstantRanking.rankingpost');
+    }
+
 }
