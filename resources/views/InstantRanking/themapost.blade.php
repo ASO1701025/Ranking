@@ -53,11 +53,17 @@
 
                 $res = pg_query( $pg_conn, $sql);	var_dump($res);
                 	echo "接続できたよ！";
-            } else {	var_dump("接続できませんでした");}
-            pg_close($pg_conn);
+                	pg_close($pg_conn);
+                header('Location: https://instantranking.herokuapp.com');
+                exit();
+            } else {
+                var_dump("なんかエラー起きてる　管理者に連絡して");
+            pg_close($pg_conn);}
 
             };
             echo "テーマが追加されました！";
+
+
 
             ?>
     </form>
