@@ -32,11 +32,11 @@
             $sql = "SELECT * FROM userinformation  WHERE  addless = '{$_POST["email"]}' AND password = '{$_POST["password"]}'";
             var_dump($sql);
 
-           // if($res = pg_query( $pg_conn, $sql)){
-//                session_regenerate_id(true); //session_idを新しく生成し、置き換える
-//                $_SESSION['email'] = $_POST['email'];
-//                echo "ログインできたよ！";
-            //}
+            if($res = pg_query( $pg_conn, $sql)){
+                session_regenerate_id(true); //session_idを新しく生成し、置き換える
+                $_SESSION['email'] = $_POST['email'];
+                echo "ログインできたよ！";
+            }
 
 
 
