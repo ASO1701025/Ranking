@@ -27,9 +27,9 @@
 
         if( $pg_conn ) {
 
-            //これを取得する分に書き換
+            //これを取得する分に書き換(,)
 
-            $sql = "SELECT * FROM userinformation (addless,password) VALUES('{$_POST["email"]}' , '{$_POST["password"]}')";
+            $sql = "SELECT * FROM userinformation  WHERE  addless = '{$_POST["email"]}' AND password = '{$_POST["password"]}'";
             var_dump($sql);
 
            // if($res = pg_query( $pg_conn, $sql)){
