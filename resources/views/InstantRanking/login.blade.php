@@ -30,14 +30,13 @@
             //これを取得する分に書き換
 
             $sql = "SELECT * FROM userinformation (addless,password) VALUES('{$_POST["email"]}' , '{$_POST["password"]}')";
-
             var_dump($sql);
 
-            if($res = pg_query( $pg_conn, $sql)){
-                session_regenerate_id(true); //session_idを新しく生成し、置き換える
-                $_SESSION['email'] = $_POST['email'];
-                echo "ログインできたよ！";
-            }
+           // if($res = pg_query( $pg_conn, $sql)){
+//                session_regenerate_id(true); //session_idを新しく生成し、置き換える
+//                $_SESSION['email'] = $_POST['email'];
+//                echo "ログインできたよ！";
+            //}
 
 
 
