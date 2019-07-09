@@ -16,6 +16,7 @@
 
 
     <? if(isset($_POST["email"],$_POST["password"])){
+
         //データベースに同じ奴がいるかの判定を作って
         session_start();
 
@@ -50,6 +51,7 @@
 
     }else{ ?>
     <form method="post">
+        {{ csrf_field() }}
         <h1>ログインフォーム</h1>
         <div class="form-group">
             <input type="email"  class="form-control" name="email" placeholder="メールアドレス"  />

@@ -24,6 +24,7 @@
 
 <header id="caption"align="center"><h1>InstantRanking</h1></header>
 <form method="post">
+    {{ csrf_field() }}
     <div align="center">
         <p>ジャンル
             <select name="genre">
