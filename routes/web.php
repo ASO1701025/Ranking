@@ -19,6 +19,7 @@
 
 
 Route::get('/login', 'instantrankingController@login');
+Route::post('/login', 'instantrankingController@login');
 
 Route::get('/ranp', 'instantrankingController@ranp');
 Route::post('/ranp', 'instantrankingController@ranp');
