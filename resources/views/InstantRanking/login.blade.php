@@ -29,7 +29,7 @@
 
             //これを取得する分に書き換
 
-            $sql = "SELECT * FROM userinformation (addless,password) VALUES('{$email}' , '{$password}')";
+            $sql = "SELECT * FROM userinformation (addless,password) VALUES('{$_POST["email"]}' , '{$_POST["password"]}')";
 
             var_dump($sql);
 
