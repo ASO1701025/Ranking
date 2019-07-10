@@ -38,6 +38,8 @@
                 echo "ログインできたよ！";
                 echo $_SESSION['name'];
 
+                header('Location: ./home');
+                exit();
             }
 
 
