@@ -95,6 +95,7 @@
     <h1>InstantRanking</h1>
 </header>
 <div align="center">
+    <? echo $_SESSION['name']; ?>
     <p>トップ画面</p>
     <p>
 
