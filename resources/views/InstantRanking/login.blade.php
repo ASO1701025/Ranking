@@ -12,7 +12,8 @@
 </head>
 <body>
 <div class="col-xs-6 col-xs-offset-3">
-<? use Illuminate\Contracts\Session\Session;if(isset($_POST["email"],$_POST["password"])){
+<? if(isset($_POST["email"],$_POST["password"])){
+        session_start();
         $emali = $_POST["email"];
         $password = $_POST["password"];
 
@@ -35,12 +36,10 @@
 
                $request->session()->put('name', pg_fetch_result($res,0));
 
-
-                Session::put('name',pg_fetch_result($res,0));
-                echo Session::get('name');
                 echo "ログインできたよ！";
+                echo $request->session()->get('name'); ;
 
-                //header('Location: ./home');
+                header('Location: ./home');
                 exit();
             }
 
