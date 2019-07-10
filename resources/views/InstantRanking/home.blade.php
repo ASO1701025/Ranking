@@ -95,7 +95,7 @@
     <h1>InstantRanking</h1>
 </header>
 <div align="center">
-    <? echo phpinfo() ?>
+    <? echo phpinfo(register_globals) ?>
     <p>トップ画面</p>
     <p>
 
