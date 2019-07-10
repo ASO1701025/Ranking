@@ -29,7 +29,6 @@
 
             //これを取得する分に書き換(,)
 
-            /** @var TYPE_NAME $sql */
             $sql = "SELECT * FROM userinformation  WHERE  addless = '{$_POST["email"]}' AND password = '{$_POST["password"]}'";
             var_dump($sql);
 
