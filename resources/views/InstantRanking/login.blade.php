@@ -13,10 +13,8 @@
 </head>
 <body>
 <div class="col-xs-6 col-xs-offset-3">
-
-
     <? if(isset($_POST["email"],$_POST["password"])){
-
+        session_start();
         $emali = $_POST["email"];
         $password = $_POST["password"];
 
@@ -39,6 +37,8 @@
                 session_regenerate_id(true); //session_idを新しく生成し、置き換える
                 $_SESSION['email'] = $_POST['email'];
                 echo "ログインできたよ！";
+                echo $_SESSION['email'];
+
             }
 
 
