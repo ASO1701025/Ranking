@@ -12,7 +12,6 @@
 </head>
 <body>
 <div class="col-xs-6 col-xs-offset-3">
-    {{ csrf_field() }}
 <? if(isset($_POST["email"],$_POST["password"])){
         session_start();
         $emali = $_POST["email"];
@@ -54,6 +53,7 @@
 
     }else{ ?>
     <form method="post">
+        {{ csrf_field() }}
         <h1>ログインフォーム</h1>
         <div class="form-group">
             <input type="email"  class="form-control" name="email" placeholder="メールアドレス"  />
