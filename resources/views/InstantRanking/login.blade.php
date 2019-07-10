@@ -36,7 +36,7 @@
                 session_regenerate_id(true); //session_idを新しく生成し、置き換える
                 $_SESSION['email'] = $_POST['email'];
                 echo "ログインできたよ！";
-                var_dump(pg_fetch_all($res));
+                echo pg_fetch_result($res,0);
                 echo $_SESSION['email'];
 
             }
