@@ -52,7 +52,7 @@ if (strpos($_SERVER['HTTP_USER_AGENT'], 'iPhone') !== false) {
             <input type="submit" class="button" onclick="location.href='/shinki'" value="新規登録"><br>
             <!-- 空白 -->
             <!-- ログインボタン -->
-            <input type="submit" class="button" onclick="location.href='/login'" value="ログイン"><br>
+            <input type="submit" class="button" onclick="location.href='https://instantranking.herokuapp.com/login'" value="ログイン"><br>
         <?php
         ?>
         {{--db接続テスト--}}
