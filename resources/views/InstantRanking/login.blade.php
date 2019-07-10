@@ -17,6 +17,9 @@
 
     <? if(isset($_POST["email"],$_POST["password"])){
 
+        $emali = $_POST["email"];
+        $password = $_POST["password"];
+
         //データベースに同じ奴がいるかの判定を作って
         session_start();
 
@@ -29,7 +32,7 @@
 
             //これを取得する分に書き換(,)
 
-            $sql = "SELECT * FROM userinformation  WHERE  addless = '{$_POST["email"]}' AND password = '{$_POST["password"]}'";
+            $sql = "SELECT * FROM userinformation  WHERE  addless = '$emali' AND password = '$password'";
             var_dump($sql);
 
             if($res = pg_query( $pg_conn, $sql)){
