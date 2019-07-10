@@ -49,7 +49,7 @@ if (strpos($_SERVER['HTTP_USER_AGENT'], 'iPhone') !== false) {
             ?>
 
             <!-- 新規登録ボタン -->
-            <input type="submit" class="button" onclick="location.href='/shinki'" value="新規登録"><br>
+            <input type="button" onclick="location.href='./shinki'" value="新規登録"><br>
             <!-- 空白 -->
             <!-- ログインボタン -->
             <input type="button" onclick="location.href='./login'"  value="ログイン"><br>
