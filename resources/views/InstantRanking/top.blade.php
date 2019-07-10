@@ -52,7 +52,7 @@ if (strpos($_SERVER['HTTP_USER_AGENT'], 'iPhone') !== false) {
             <input type="submit" class="button" onclick="location.href='/shinki'" value="新規登録"><br>
             <!-- 空白 -->
             <!-- ログインボタン -->
-            <input type="submit" class="button" onclick=" href='https://teratail.com/questions/64250' " value="ログイン"><br>
+            <input type="submit" class="button" location.href='/login' value="ログイン"><br>
         {{--db接続テスト--}}
 <?php // $res = null;$pg_conn = null;$sql = null;$date = null;
         date_default_timezone_set('Asia/Tokyo');$date = date("Y-m-d");
