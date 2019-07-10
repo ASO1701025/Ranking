@@ -96,6 +96,19 @@
 </header>
 <div align="center">
     <p>トップ画面</p>
+    <?
+    $request = request();
+    echo $request->session()->get('name'); ;
+    echo $request->session()->get('name'); ;
+    echo $request->session()->get('name'); ;
+    echo $request->session()->get('name'); ;
+    echo $request->session()->get('name'); ;
+    echo $request->session()->get('name'); ;
+    echo $request->session()->get('name'); ;
+    echo $request->session()->get('name'); ;
+    echo $request->session()->get('name'); ;
+    echo $request->session()->get('name'); ;
+    ?>
     <p>
 
     </p>
