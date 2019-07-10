@@ -10,10 +10,10 @@
     <!-- Bootstrap読み込み（スタイリングのため） -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
 </head>
-</head>
 <body>
 <div class="col-xs-6 col-xs-offset-3">
-    <? if(isset($_POST["email"],$_POST["password"])){
+    {{ csrf_field() }}
+<? if(isset($_POST["email"],$_POST["password"])){
         session_start();
         $emali = $_POST["email"];
         $password = $_POST["password"];
@@ -54,7 +54,6 @@
 
     }else{ ?>
     <form method="post">
-        {{ csrf_field() }}
         <h1>ログインフォーム</h1>
         <div class="form-group">
             <input type="email"  class="form-control" name="email" placeholder="メールアドレス"  />
