@@ -34,10 +34,9 @@
 
             if($res = pg_query( $pg_conn, $sql)){
                 session_regenerate_id(true); //session_idを新しく生成し、置き換える
-                $_SESSION['email'] = $_POST['email'];
+                $_SESSION['name'] = pg_fetch_result($res,0);;
                 echo "ログインできたよ！";
-                echo pg_fetch_result($res,0);"<br>";
-                echo $_SESSION['email'];
+                echo $_SESSION['name'];
 
             }
 
