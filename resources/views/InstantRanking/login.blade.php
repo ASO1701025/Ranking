@@ -19,7 +19,6 @@
         $password = $_POST["password"];
 
         //データベースに同じ奴がいるかの判定を作って
-        session_start();
 
         $res = null;$pg_conn = null;$sql = null;$date = null;
         date_default_timezone_set('Asia/Tokyo');$date = date("Y-m-d");
