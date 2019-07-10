@@ -95,7 +95,6 @@
     <h1>InstantRanking</h1>
 </header>
 <div align="center">
-    <?　　?>
     <p>トップ画面</p>
     <p>
 

@@ -38,7 +38,7 @@
 
                 echo "ログインできたよ！";
                 echo $request->session()->get('name'); ;
-                header('Location: ./home');
+                //header('Location: ./home');
                 exit();
             }
 
