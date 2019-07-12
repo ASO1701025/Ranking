@@ -98,7 +98,13 @@
     <p>トップ画面</p>
 
     <p>
-
+        <?
+        $request = request();
+        echo $request->session()->get('name'); ;
+        echo $request->session()->get('name'); ;
+        echo $request->session()->get('name'); ;
+        echo $request->session()->get('name'); ;
+        ?>
     </p>
 </div>
 <div>
@@ -108,13 +114,7 @@
         <p class="content1">本文</p>
         <p class="content1">本文</p>
         <p class="content1">本文</p>
-        <?
-        $request = request();
-        echo $request->session()->get('name'); ;
-        echo $request->session()->get('name'); ;
-        echo $request->session()->get('name'); ;
-        echo $request->session()->get('name'); ;
-        ?>
+
     </div>
     <div class="row">
         <div class="col">
