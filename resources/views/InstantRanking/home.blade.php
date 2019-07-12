@@ -111,7 +111,7 @@
 
         <?
         $request = request();
-        $request->session()->reflash();
+        session()->replace(session()->all());
         echo $request->session()->get('name');
         ?>
     </div>
