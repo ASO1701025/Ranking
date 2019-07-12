@@ -114,12 +114,6 @@
         echo $request->session()->get('name'); ;
         echo $request->session()->get('name'); ;
         echo $request->session()->get('name'); ;
-        echo $request->session()->get('name'); ;
-        echo $request->session()->get('name'); ;
-        echo $request->session()->get('name'); ;
-        echo $request->session()->get('name'); ;
-        echo $request->session()->get('name'); ;
-        echo $request->session()->get('name'); ;
         ?>
     </div>
     <div class="row">
