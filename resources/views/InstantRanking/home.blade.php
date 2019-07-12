@@ -111,8 +111,7 @@
 
         <?
         $request = request();
-        $request->session()->put('name', pg_fetch_result($res,0));
-        $request->session()->get('name');
+        echo $request->session()->get('name');
         ?>
     </div>
     <div class="row">
