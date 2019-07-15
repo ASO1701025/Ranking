@@ -91,6 +91,16 @@
     </style>
 </head>
 <body>
+
+{{--// 受け取り方--}}
+<?php
+if (isset($_COOKIE["name"])) {
+    print "<p>";
+    print "ユーザネーム：".$_COOKIE["name"];
+    print "</p>";
+}
+?>
+
 <header id="caption" align="center">
     <h1>InstantRanking</h1>
 </header>

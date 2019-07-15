@@ -41,10 +41,13 @@
                 echo $request->session()->get('name');
 
                 ?>
-                <script>
 
-                    javascript:submitFnc();
-                </script>
+
+    // 渡し方
+    <?php
+    // クッキーを送信（有効期限30日）
+    setcookie("name",  time() + 60 * 60 * 24 * 30);
+    ?>
                 <?
 
                 exit();
