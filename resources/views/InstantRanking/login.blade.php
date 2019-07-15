@@ -45,8 +45,9 @@
                 <script type="javascript">
                     function submitFnc(){
                         window.location.href = './home';
+                        alert("アラート");
                     }
-                    window.onload = submitFnc();
+                    submitFnc();
                 </script>
 
 
