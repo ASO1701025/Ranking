@@ -41,7 +41,11 @@
                 echo $request->session()->get('name');
 
                 ?>
-                    <a href="javascript:submitFnc();">Submitする</a>
+                    <form id="fm1">
+                        {{--<input type="text" name="txt1">--}}
+                        {{--<input type="hidden" name="hid1">--}}
+                    </form>
+                        <a href="javascript:submitFnc();">Submitする</a>
                 <?
 
                 exit();
