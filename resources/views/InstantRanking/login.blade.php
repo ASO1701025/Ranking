@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ログイン機能</title>
-    <script src="sesson.js"></script>
+    {{--<script src="sesson.js"></script>--}}
     <link rel="stylesheet" href="style.css">
     <!-- Bootstrap読み込み（スタイリングのため） -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
@@ -44,10 +44,10 @@
 
                 <script type="javascript">
                     function submitFnc(){
-                        window.location.href = './home';
+                        window.location.href = "https://instantranking.herokuapp.com/home";
                         alert("アラート");
                     }
-                    onload.submitFnc();
+                    submitFnc();
                 </script>
 
 
