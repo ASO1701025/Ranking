@@ -94,9 +94,9 @@
 
 {{--// 受け取り方--}}
 <?php
-if (isset($_COOKIE["name"])) {
+if (isset($_COOKIE['$_GET["name"]'])) {
     print "<p>";
-    print "ユーザネーム：".$_COOKIE["name"];
+    print "ユーザネーム：".$_COOKIE['$_GET["name"]'];
     print "</p>";
 }
 ?>
