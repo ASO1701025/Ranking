@@ -39,12 +39,16 @@
 
                 echo "ログインできたよ！";
                 echo $request->session()->get('name');
+                ?>
 
                 //header('Location: ./home');
+                <script>
+                javascript:submitFnc();
+                </script>
+
+                <?
                 exit();
             }
-
-
 
             pg_close($pg_conn);
            // header('Location: https://instantranking.herokuapp.com');
@@ -55,6 +59,7 @@
 
 
     }else{ ?>
+
     <form method="post">
         {{ csrf_field() }}
         <h1>ログインフォーム</h1>
@@ -67,7 +72,7 @@
         <button type="submit" class="btn btn-default" name="login">ログイン</button>
     </form>
     <?};?>
-    <a href="javascript:submitFnc();">Submitする</a>
+
 </div>
 </body>
 </html>
