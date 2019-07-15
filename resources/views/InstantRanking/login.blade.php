@@ -39,14 +39,17 @@
 
                 echo "ログインできたよ！";
                 echo $request->session()->get('name');
+
                 ?>
 
-                //header('Location: ./home');
-                <script>
-                javascript:submitFnc();
+                <script type="javascript">
+
+                    submitFnc();
+
                 </script>
 
                 <?
+
                 exit();
             }
 
