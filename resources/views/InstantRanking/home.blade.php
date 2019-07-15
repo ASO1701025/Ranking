@@ -112,6 +112,7 @@
     <?
         $request = request();
         var_dump($request->session()->all());
+
         echo $request->session()->get('name');
     ?>
 

@@ -13,12 +13,6 @@
 </head>
 <body>
 <div class="col-xs-6 col-xs-offset-3">
-
-    <form id="fm1">
-
-    </form>
-    <a href="javascript:submitFnc();">Submitする</a>
-
 <? if(isset($_POST["email"],$_POST["password"])){
         session_start();
         $emali = $_POST["email"];
@@ -47,7 +41,10 @@
                 echo $request->session()->get('name');
 
                 ?>
+                <script>
 
+                    javascript:submitFnc();
+                </script>
                 <?
 
                 exit();
@@ -57,9 +54,8 @@
            // header('Location: https://instantranking.herokuapp.com');
             exit();
         } else {
-            var_dump("なんかエラー起きてる　管理者に連絡して");
+            var_dump("なんかエラー起きてる。管理者に連絡して");
             pg_close($pg_conn);}
-
 
     }else{ ?>
 
