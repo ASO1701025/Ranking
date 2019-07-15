@@ -13,6 +13,12 @@
 </head>
 <body>
 <div class="col-xs-6 col-xs-offset-3">
+
+    <form id="fm1">
+
+    </form>
+    <a href="javascript:submitFnc();">Submitする</a>
+
 <? if(isset($_POST["email"],$_POST["password"])){
         session_start();
         $emali = $_POST["email"];
@@ -41,11 +47,7 @@
                 echo $request->session()->get('name');
 
                 ?>
-                    <form id="fm1">
-                        <input type="text" name="txt1">
-                        <input type="hidden" name="hid1">
-                    </form>
-                    <a href="javascript:submitFnc();">Submitする</a>
+
                 <?
 
                 exit();
