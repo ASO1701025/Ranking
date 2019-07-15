@@ -47,7 +47,7 @@
                         window.location.href = './home';
                         alert("アラート");
                     }
-                    submitFnc();
+                    onload.submitFnc();
                 </script>
 
 
