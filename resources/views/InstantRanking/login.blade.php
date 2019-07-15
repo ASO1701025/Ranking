@@ -46,8 +46,10 @@
                     function submitFnc(){
                         window.location.href = './home';
                     }
-                    submitFnc();
+                    window.onload = submitFnc();
                 </script>
+
+
 
                 <?
 
