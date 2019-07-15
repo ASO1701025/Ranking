@@ -44,8 +44,7 @@
 
                 <script type="javascript">
                     function submitFnc(){
-                        //action先を指定する
-                        fm.action = "./home";  // 例）"/php/sample.php"に指定する
+                        window.location.href = './home';
                     }
                     submitFnc();
                 </script>
