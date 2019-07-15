@@ -1,10 +1,10 @@
 function submitFnc(){
     //formオブジェクトを取得する
-    //var fm = document.getElementById("fm1");
+    var fm = document.getElementById("fm1");
 
 
     //Submit形式指定する（post/get）
-    //fm.method = "post";  // 例）POSTに指定する
+    fm.method = "post";  // 例）POSTに指定する
 
 
     //action先を指定する
