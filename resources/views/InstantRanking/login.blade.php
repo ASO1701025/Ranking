@@ -46,7 +46,7 @@
     // 渡し方
     <?php
     // クッキーを送信（有効期限30日）
-    setcookie('$_POST["name"]',  time() + 60 * 60 * 24 * 30);
+    setcookie('un','name',  time() + 60 * 60 * 24 * 30);
     ?>
                 <?
                 header('Location: ./home');
