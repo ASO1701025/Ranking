@@ -97,6 +97,13 @@
             print "ユーザネーム：".$_COOKIE["un"];
             print "</p>";
         }
+
+        if (isset($_COOKIE["email"])) {
+            print "<p>";
+            print "アドレス：".$_COOKIE["email"];
+            print "</p>";
+        }
+
         ?>
 
         <header id="caption" align="center">

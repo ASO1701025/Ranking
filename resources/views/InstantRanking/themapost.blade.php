@@ -70,6 +70,8 @@ if (isset($_COOKIE["un"])) {
 
                 var_dump($sql);
 
+                header('Location: ./home');
+
                 $res = pg_query( $pg_conn, $sql);	var_dump($res);
                 	echo "接続できたよ！";
                 	pg_close($pg_conn);
