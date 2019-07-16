@@ -18,7 +18,7 @@ if (strpos($_SERVER['HTTP_USER_AGENT'], 'iPhone') !== false) {
     </head>
 
     <body>
-    <img src="./hukurou.png">
+
     <!-- マスコット -->
     <div align="center">
         <form method="post">
@@ -36,7 +36,7 @@ if (strpos($_SERVER['HTTP_USER_AGENT'], 'iPhone') !== false) {
                     echo "<br/>";
                 }
                 ?>
-
+                <img alt="テスト" src{{asset('/img/hukurou.png')}} width="340" height="470"><br>
 
             </span>
             <!-- 空白 -->
