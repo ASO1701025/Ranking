@@ -91,6 +91,14 @@
 
     <body>
 
+        <?php
+        if (isset($_COOKIE["un"])) {
+            print "<p>";
+            print "ユーザネーム：".$_COOKIE["un"];
+            print "</p>";
+        }
+        ?>
+
         <header id="caption" align="center">
             InstantRanking
         </header>
