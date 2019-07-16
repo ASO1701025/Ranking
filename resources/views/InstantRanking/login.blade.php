@@ -15,7 +15,7 @@
 <div class="col-xs-6 col-xs-offset-3">
 <? if(isset($_POST["email"],$_POST["password"])){
         session_start();
-        $emali = $_POST["email"];
+        $email = $_POST["email"];
         $password = $_POST["password"];
 
         //データベースに同じ奴がいるかの判定を作って
