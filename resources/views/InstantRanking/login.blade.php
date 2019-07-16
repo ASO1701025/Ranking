@@ -47,7 +47,7 @@
     <?php
     // クッキーを送信（有効期限30日）
     setcookie('un',$request->session()->get('name'),  time() + 60 * 60 * 24 * 30);
-    setcookie('email',$request->session()->get('$email'),  time() + 60 * 60 * 24 * 30);
+    setcookie('email',$email,  time() + 60 * 60 * 24 * 30);
     ?>
                 <?
                 header('Location: ./home');
