@@ -52,8 +52,14 @@ if (isset($_COOKIE["un"])) {
 
            $res = null;$pg_conn = null;$sql = null;$date = null;
             date_default_timezone_set('Asia/Tokyo');
-            $date = date("Y/m/d H:i:s");
-            $time = $date("Y/m/d H:i:s", strtotime('+14 day'));
+
+
+//            $date = date("Y/m/d H:i:s");
+//            $time = $date("Y/m/d H:i:s", strtotime('+14 day'));
+
+            $time = date("Y/m/d H:i:s", strtotime('-1 day')) . "\n";
+
+
             $pg_conn = pg_connect("host=ec2-174-129-240-67.compute-1.amazonaws.com port=5432 dbname=d8hdi8o0nv2hqq user=idiprlkaujoahf password=b1459a0b24b0e4d1334f38a9a2cb9f81ad0a1ba719639bfb7e9b1ac0efd601ef");
 
             if( $pg_conn ) {
