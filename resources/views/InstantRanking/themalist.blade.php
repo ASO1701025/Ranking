@@ -45,6 +45,35 @@
                 height: 100px;
             }
 
+            .row {
+                display: flex;
+                width: 100%;
+            }
+
+            .col {
+                flex-basis: 50%;
+                display: flex;
+                flex-direction: column;
+            }
+            .col:not(:last-child) {
+                margin-right: 20px;
+            }
+
+            .card {
+                flex-grow: 1;
+                flex-shrink: 1;
+
+                width: 100%;
+                padding: 20px;
+                box-sizing: border-box;
+
+                box-shadow: rgba(0, 0, 0, .2) 1px 1px 5px;
+            }
+            .card:not(:last-child) {
+                margin-bottom: 20px;
+            }
+
+
         </style>
     </head>
     <body>
@@ -61,8 +90,32 @@
             </select>
         </p>
     </div>
+
     <div>
+
+        <div style="border: 2pt solid #000000;border-radius: 20%;height: 150pt;width: 100%;" align="center">
+            <p>~~~~~ランキング</p>
+        </div>
+
+        <p style="color: #fb9209">投稿一覧</p>
+
+        <div class="row">
+            <div class="col">
+                <div class="card">Card1</div>
+                <div class="card">Card2</div>
+                <div class="card">Card3</div>
+
+            </div>
+            <div class="col">
+                <div class="card">Card4</div>
+                <div class="card">Card5</div>
+                <div class="card">Card6</div>
+            </div>
+
+        </div>
     </div>
+
+
     <footer>
         <nav>
             <ul>

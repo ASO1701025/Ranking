@@ -66,6 +66,7 @@ if (isset($_COOKIE["un"])) {
             if( $pg_conn ) {
 
 
+
                 $sql = "INSERT INTO thema (themavalue,genrelid,timelimit,userid) VALUES('{$thema}' , '{$genle}' , '{$time}' , '{$user}' )";
 
                 var_dump($sql);
