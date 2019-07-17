@@ -82,7 +82,7 @@ if (isset($_COOKIE["un"])) {
             pg_close($pg_conn);}
 
             };
-            echo "テーマが追加されました！";
+            //echo "テーマが追加されました！";
 
 
 
