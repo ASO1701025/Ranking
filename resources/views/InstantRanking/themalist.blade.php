@@ -98,7 +98,15 @@
 
         <div class="row">
             <div class="col">
-                <div class="card">Card1</div>
+                <div class="card">Card1
+
+                    <?
+                        $sql = "SELECT themavalue FROM thema";
+                        echo $sql;
+
+                    ?>
+
+                </div>
                 <div class="card">Card2</div>
                 <div class="card">Card3</div>
 

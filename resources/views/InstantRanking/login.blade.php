@@ -39,8 +39,7 @@
 
                 echo "ログインできたよ！";
                 echo $request->session()->get('name');
-
-                ?>
+?>
 
 
     {{--COOKIE渡し方--}}
