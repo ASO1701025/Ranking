@@ -93,11 +93,8 @@
 
     <div>
 
-        <div style="border: 2pt solid #000000;border-radius: 20%;height: 150pt;width: 100%;" align="center">
-            <p>~~~~~ランキング</p>
-        </div>
 
-        <p style="color: #fb9209">投稿一覧</p>
+        <p style="color: #fb9209">検索テーマ</p>
 
         <div class="row">
             <div class="col">
