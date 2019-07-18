@@ -101,8 +101,16 @@
                 <div class="card">Card1
 
                     <?
-                        $sql = "SELECT themavalue FROM thema";
-                        echo $sql;
+
+                        $pg_conn = pg_connect("host=ec2-174-129-240-67.compute-1.amazonaws.com port=5432 dbname=d8hdi8o0nv2hqq user=idiprlkaujoahf password=b1459a0b24b0e4d1334f38a9a2cb9f81ad0a1ba719639bfb7e9b1ac0efd601ef");
+
+                        if( $pg_conn ) {
+
+                            $sql = "SELECT themavalue FROM thema";
+                            var_dump($sql);
+
+                            echo $sql;
+                        }
 
                     ?>
 
