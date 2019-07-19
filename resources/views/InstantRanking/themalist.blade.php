@@ -78,7 +78,7 @@
     </head>
     <body>
 
-    <?php
+    <?
         if (isset($_COOKIE["un"])) {
             print "<p>";
             print "ユーザネーム：".$_COOKIE["un"];
@@ -91,6 +91,9 @@
 
             //接続ができたとき
             if($pg_conn){
+
+                $email = null;
+                $password = null;
 
                 //これを取得する分に書き換(,)
                 $sql = "SELECT * FROM userinformation  WHERE  address = '$email' AND password = '$password'";
