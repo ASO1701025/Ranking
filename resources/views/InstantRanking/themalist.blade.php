@@ -83,6 +83,24 @@
             print "<p>";
             print "ユーザネーム：".$_COOKIE["un"];
             print "</p>";
+
+            //DBの接続設定
+            $res=null;$pg_conn=null;$sql=null;$date=null;
+            date_default_timezone_set('Asia/Tokyo');$date=date("Y-m-d");
+            $pg_conn=pg_connect("host=ec2-174-129-240-67.compute-1.amazonaws.comport=5432dbname=d8hdi8o0nv2hqquser=idiprlkaujoahfpassword=b1459a0b24b0e4d1334f38a9a2cb9f81ad0a1ba719639bfb7e9b1ac0efd601ef");
+
+            //接続ができたとき
+            if($pg_conn){
+
+                //これを取得する分に書き換(,)
+                $sql="SELECT*FROMWHEREaddress='$email'ANDpassword='$password'";
+                var_dump($sql);
+
+                if($res=pg_query($pg_conn,$sql)){
+                    //session_regenerate_id(true);//session_idを新しく生成し、置き換え
+                }
+            }
+
         }
     ?>
 
@@ -108,20 +126,6 @@
         <div class="row">
             <div class="col">
                 <div class="card">Card1
-
-                    <?
-
-                        $pg_conn = pg_connect("host=ec2-174-129-240-67.compute-1.amazonaws.com port=5432 dbname=d8hdi8o0nv2hqq user=idiprlkaujoahf password=b1459a0b24b0e4d1334f38a9a2cb9f81ad0a1ba719639bfb7e9b1ac0efd601ef");
-
-                        if( $pg_conn ) {
-
-                            $sql = "SELECT themavalue FROM thema";
-                            var_dump($sql);
-
-                            echo $sql;
-                        }
-
-                    ?>
 
                 </div>
                 <div class="card">Card2</div>
