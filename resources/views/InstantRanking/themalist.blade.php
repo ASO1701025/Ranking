@@ -82,6 +82,7 @@
         if (isset($_COOKIE["un"])) {
             print "<p>";
             print "ユーザネーム：".$_COOKIE["un"];
+            $user = $_COOKIE["un"];
             print "</p>";
 
             //DBの接続設定
@@ -92,11 +93,8 @@
             //接続ができたとき
             if($pg_conn){
 
-                $email = null;
-                $password = null;
-
                 //これを取得する分に書き換(,)
-                $sql = "SELECT * FROM userinformation  WHERE  address = '$email' AND password = '$password'";
+                $sql = "SELECT * FROM thema  WHERE userid = '$user'";
                 var_dump($sql);
 
                 if($res = pg_query($pg_conn, $sql)){
