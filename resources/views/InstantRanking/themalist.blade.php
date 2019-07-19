@@ -93,7 +93,7 @@
             if($pg_conn){
 
                 //これを取得する分に書き換(,)
-                $sql = "SELECT * FROM WHERE address='$email' AND password='$password'";
+                $sql = "SELECT * FROM userinformation  WHERE  address = '$email' AND password = '$password'";
                 var_dump($sql);
 
                 if($res = pg_query($pg_conn, $sql)){
