@@ -33,6 +33,7 @@
 
             if($res = pg_query( $pg_conn, $sql)){
 //                session_regenerate_id(true); //session_idを新しく生成し、置き換え
+
                 $request = request();
 
                $request->session()->put('name', pg_fetch_result($res,0));
