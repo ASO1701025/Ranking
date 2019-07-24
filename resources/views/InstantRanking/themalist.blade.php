@@ -72,9 +72,14 @@
             .card:not(:last-child) {
                 margin-bottom: 20px;
             }
-
-
         </style>
+
+        <script>
+            function frameClick() {
+                document.location.href = "./ditail";
+            }
+        </script>
+
     </head>
     <body>
 
@@ -128,7 +133,7 @@
 
         <div class="row">
             <div class="col">
-                <div class="card" onclick="/ditail">
+                <div class="card" onclick="frameClick()">
                     <?
                         $sql = "SELECT * FROM thema";
                         //var_dump($sql);
