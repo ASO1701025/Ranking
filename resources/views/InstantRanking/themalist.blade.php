@@ -94,14 +94,14 @@
             if($pg_conn){
 
                 //これを取得する分に書き換(,)
-                $sql = "SELECT * FROM thema";
-                var_dump($sql);
-
-                if($res = pg_query($pg_conn, $sql)){
-                    //session_regenerate_id(true);//session_idを新しく生成し、置き換え
-                    $nemu = pg_fetch_array($res);
-                    echo($nemu[1]);
-                }
+                  $sql = "SELECT * FROM thema";
+//                var_dump($sql);
+//
+//                if($res = pg_query($pg_conn, $sql)){
+//                    //session_regenerate_id(true);//session_idを新しく生成し、置き換え
+//                    $nemu = pg_fetch_array($res);
+//                    echo($nemu[1]);
+//                }
             }
 
         }
