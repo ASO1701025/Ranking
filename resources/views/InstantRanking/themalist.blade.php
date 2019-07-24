@@ -131,7 +131,7 @@
                 <div class="card">Card1
                     <?
                         $sql = "SELECT * FROM thema";
-                        var_dump($sql);
+                        //var_dump($sql);
 
                         if($res = pg_query($pg_conn, $sql)){
                         //session_regenerate_id(true);//session_idを新しく生成し、置き換え
@@ -139,7 +139,6 @@
                         echo($nemu[1]);
                         }
                     ?>
-                    }
                 </div>
                 <div class="card">Card2</div>
                 <div class="card">Card3</div>
