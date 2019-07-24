@@ -141,18 +141,18 @@
                         if($res = pg_query($pg_conn, $sql)){
                         //session_regenerate_id(true);//session_idを新しく生成し、置き換え
                         $nemu = pg_fetch_array($res);
-                        echo($nemu[1]);
+                            echo($nemu[3]);
                         }
                     ?>
                 </div>
-                <div class="card">Card2</div>
-                <div class="card">Card3</div>
+                <div class="card" onclick="frameClick()"></div>
+                <div class="card" onclick="frameClick()"></div>
 
             </div>
             <div class="col">
-                <div class="card">Card4</div>
-                <div class="card">Card5</div>
-                <div class="card">Card6</div>
+                <div class="card" onclick="frameClick()"></div>
+                <div class="card" onclick="frameClick()"></div>
+                <div class="card" onclick="frameClick()"></div>
             </div>
 
         </div>
