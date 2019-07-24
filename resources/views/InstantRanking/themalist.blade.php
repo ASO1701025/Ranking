@@ -128,7 +128,7 @@
 
         <div class="row">
             <div class="col">
-                <div class="card">Card1
+                <div class="card" onclick="/ditail">
                     <?
                         $sql = "SELECT * FROM thema";
                         //var_dump($sql);
