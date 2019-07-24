@@ -79,7 +79,7 @@ if (isset($_COOKIE["un"])) {
                 header('Location: https://instantranking.herokuapp.com');
                 exit();
             } else {
-                var_dump("なんかエラー起きてる　管理者に連絡して");
+                var_dump("エラー起きてる　管理者に連絡して");
             pg_close($pg_conn);}
 
             };
