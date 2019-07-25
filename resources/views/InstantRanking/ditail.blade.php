@@ -30,7 +30,6 @@
         <?php
         if (isset($_COOKIE["un"])) {
             print "<p>";
-            print "ユーザネーム：".$_COOKIE["un"];
             $user = $_COOKIE["un"];
             print "</p>";
 
