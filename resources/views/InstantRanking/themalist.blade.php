@@ -145,7 +145,7 @@
                 <div class="card" onclick="frameClick()">
                     <?
                         $nemu = pg_fetch_array($res);
-                        $sql = "SELECT * FROM thema where $nemu[4] == $user ";
+                        $sql = "SELECT * FROM thema ";
                         //var_dump($sql);
 
                         if($res = pg_query($pg_conn, $sql)){
