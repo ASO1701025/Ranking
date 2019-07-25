@@ -54,7 +54,7 @@
         }
         ?>
 
-        <h1 align="center"><?$nemu[1]?>ランキング</h1>
+        <h1 align="center"><p>$nemu[1]</p>ランキング</h1>
         <div id="main" align="center">
             <div class="text1" style="top: 17%;">１位<br><div class="box">ああああああああああああああ</div></div>
             <br>
