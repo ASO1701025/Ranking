@@ -44,13 +44,17 @@
 
                 //これを取得する分に書き換(,)
                 $sql = "SELECT * FROM thema";
+                if($res = pg_query($pg_conn, $sql)){
+                    //session_regenerate_id(true);//session_idを新しく生成し、置き換え
+                    $nemu = pg_fetch_array($res);
 
+                }
             }
 
         }
         ?>
 
-        <h1 align="center">***ランキング</h1>
+        <h1 align="center"><?$nemu[1]?>ランキング</h1>
         <div id="main" align="center">
             <div class="text1" style="top: 17%;">１位<br><div class="box">ああああああああああああああ</div></div>
             <br>

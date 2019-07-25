@@ -133,15 +133,25 @@
 
         <div class="row">
             <div class="col">
+                <?php
+
+                if (isset($_COOKIE["un"])) {
+                    print "<p>";
+
+                    $user = $_COOKIE["un"];
+                    print "</p>";
+                }
+                ?>
                 <div class="card" onclick="frameClick()">
                     <?
-                        $sql = "SELECT * FROM thema";
+                        $nemu = pg_fetch_array($res);
+                        $sql = "SELECT * FROM thema where $nemu[4] == $user ";
                         //var_dump($sql);
 
                         if($res = pg_query($pg_conn, $sql)){
                         //session_regenerate_id(true);//session_idを新しく生成し、置き換え
                         $nemu = pg_fetch_array($res);
-                            echo($nemu[3]);
+                            echo($nemu[1]);
                         }
                     ?>
                 </div>
