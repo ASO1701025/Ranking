@@ -75,7 +75,10 @@
         </style>
 
         <script>
-            function frameClick() {
+            function frameClick($data) {
+                <?
+                    //setcookie('data',$data,  time() + 60 * 60 * 24 * 30);
+                ?>
                 document.location.href = "./ditail";
             }
         </script>
@@ -161,7 +164,6 @@
                 <div class="card" onclick="frameClick()">
                     <? echo ($nemu[1][2])?>
                 </div>
-
             </div>
             <div class="col">
                 <div class="card" onclick="frameClick()"></div>
