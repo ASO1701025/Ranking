@@ -62,6 +62,7 @@
                 echo($nemu[1]);
             }
             ?>
+            ランキング
         </h1>
         <div id="main" align="center">
             <div class="text1" style="top: 17%;">１位<br><div class="box">ああああああああああああああ</div></div>

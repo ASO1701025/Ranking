@@ -155,16 +155,7 @@
                     ?>
                 </div>
                 <div class="card" onclick="frameClick()">
-                    <?
-                    $sql = "SELECT * FROM thema ";
-                    //var_dump($sql);
-
-                    if($res = pg_query($pg_conn, $sql)){
-                        //session_regenerate_id(true);//session_idを新しく生成し、置き換え
-                        $nemu = pg_fetch_array($res);
-                        echo($nemu[1][1]);
-                    }
-                    ?>
+                    <? echo($nemu[1]) ?>
                 </div>
                 <div class="card" onclick="frameClick()">
                     <? echo ($nemu[1])?>
