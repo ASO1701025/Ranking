@@ -144,7 +144,6 @@
                 ?>
                 <div class="card" onclick="frameClick()">
                     <?
-                        $nemu = pg_fetch_array($res);
                         $sql = "SELECT * FROM thema ";
                         //var_dump($sql);
 
