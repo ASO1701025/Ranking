@@ -162,7 +162,7 @@
                     <? echo($nemu[1]) ?>
                 </div>
                 <div class="card" onclick="frameClick()">
-                    <? echo ($nemu[0][1])?>
+                    <? echo ($nemu[1][2])?>
                 </div>
             </div>
             <div class="col">
