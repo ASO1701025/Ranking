@@ -10,7 +10,7 @@ if (strpos($_SERVER['HTTP_USER_AGENT'], 'iPhone') !== false) {
     {{-- 背景の色 --}}
     <head>
         {{-- top.cssを参照 --}}
-        <link rel="stylesheet" type="text/css" href="top.css" >
+        <link rel="stylesheet" type="text/css" href="'instantrankingController@tocss" >
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>TOP</title>
