@@ -74,7 +74,7 @@
             }
         </style>
 
-        <script>
+
 
             <?
             function frameClick($data) {
@@ -84,7 +84,7 @@
                 <?
             }
             ?>
-        </script>
+
 
     </head>
     <body>
