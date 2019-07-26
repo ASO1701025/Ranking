@@ -138,7 +138,6 @@
 
         <div class="row">
             <div class="col">
-
                 <div class="card" onclick="frameClick()">
                     <?
                         $sql = "SELECT * FROM thema ";
