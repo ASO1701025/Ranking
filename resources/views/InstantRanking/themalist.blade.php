@@ -136,15 +136,7 @@
 
         <div class="row">
             <div class="col">
-                <?php
 
-                if (isset($_COOKIE["un"])) {
-                    print "<p>";
-
-                    $user = $_COOKIE["un"];
-                    print "</p>";
-                }
-                ?>
                 <div class="card" onclick="frameClick()">
                     <?
                         $sql = "SELECT * FROM thema ";
