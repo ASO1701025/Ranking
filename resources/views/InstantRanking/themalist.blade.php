@@ -142,23 +142,24 @@
 
                         if($res = pg_query($pg_conn, $sql)){
                         //session_regenerate_id(true);//session_idを新しく生成し、置き換え
-                        $nemu = pg_fetch_all($res);
+                            $nemu = pg_fetch_all($res);
 
-                        echo ($nemu["0"]["themavalue"]);
+                            echo ($nemu["0"]["themavalue"]);
 
                         }
+                        setcookie('data',$nemu["0"]["themavalue"],  time() + 60 * 60 * 24 * 30);
                     ?>
                 </div>
                 <div class="card" onclick="frameClick()">
                     <?
                         echo ($nemu["1"]["themavalue"]);
-
+                        setcookie('data',$nemu["1"]["themavalue"],  time() + 60 * 60 * 24 * 30);
                     ?>
                 </div>
                 <div class="card" onclick="frameClick()">
                     <?
                         echo ($nemu["2"]["themavalue"]);
-
+                        setcookie('data',$nemu["2"]["themavalue"],  time() + 60 * 60 * 24 * 30);
                     ?>
                 </div>
             </div>

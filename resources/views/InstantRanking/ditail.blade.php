@@ -54,12 +54,10 @@
 
         <h1 align="center">
             <?
-            $sql = "SELECT * FROM thema";
-            if($res = pg_query($pg_conn, $sql)){
-            //session_regenerate_id(true);//session_idを新しく生成し、置き換え
-            $nemu = pg_fetch_all($res);
-                //echo($nemu[1]);
+            if (isset($_COOKIE["data"])) {
+                $the = $_COOKIE["data"];
             }
+            echo $the
             ?>
             ランキング
         </h1>
