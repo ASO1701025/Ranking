@@ -45,3 +45,5 @@ Route::get('/ranking', 'instantrankingController@ranking');
 
 
 
+
+

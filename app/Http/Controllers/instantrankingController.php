@@ -82,4 +82,12 @@ class instantrankingController extends Controller
         return view('InstantRanking.rankingpost');
     }
 
+    public function huku(){
+        return view('InstantRanking.hukurou.png');
+    }
+
+    public function tocss(){
+        return view('InstantRanking.top.css');
+    }
+
 }
