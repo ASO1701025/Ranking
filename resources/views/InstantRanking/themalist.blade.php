@@ -154,7 +154,7 @@
                         //session_regenerate_id(true);//session_idを新しく生成し、置き換え
                         $nemu = pg_fetch_all($res);
 
-                        var_dump($nemu);
+                        var_dump($nemu["0"]["themavalue"]);
                         }
                     ?>
                 </div>
