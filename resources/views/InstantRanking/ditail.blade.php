@@ -54,11 +54,11 @@
 
         <h1 align="center">
             <?
-            if (isset($_COOKIE["data"])) {
-                $the = $_COOKIE["data"];
-            }
-            echo $nemu[$the]["themavalue"]
-            ?>
+//            if (isset($_COOKIE["data"])) {
+//                $the = $_COOKIE["data"];
+//            }
+//            echo $nemu[$the]["themavalue"]
+//            ?>
             ランキング
         </h1>
         <div id="main" align="center">
