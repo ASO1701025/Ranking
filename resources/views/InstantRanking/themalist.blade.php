@@ -75,7 +75,7 @@
         </style>
 
         <script>
-            function frameClick($data) {
+            function frameClick() {
                 <?
                     //setcookie('data',$data,  time() + 60 * 60 * 24 * 30);
                 ?>
@@ -154,15 +154,19 @@
                         //session_regenerate_id(true);//session_idを新しく生成し、置き換え
                         $nemu = pg_fetch_all($res);
 
-                        var_dump($nemu["1"]["themavalue"]);
+                        echo ($nemu["0"]["themavalue"]);
                         }
                     ?>
                 </div>
                 <div class="card" onclick="frameClick()">
-                    <?  ?>
+                    <?
+                        echo ($nemu["1"]["themavalue"]);
+                    ?>
                 </div>
                 <div class="card" onclick="frameClick()">
-                    <? ?>
+                    <?
+                        echo ($nemu["2"]["themavalue"]);
+                    ?>
                 </div>
             </div>
             <div class="col">
