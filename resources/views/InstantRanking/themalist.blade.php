@@ -75,16 +75,15 @@
         </style>
 
 
+        <script>
 
-            <?
-            function frameClick($data) {
-                setcookie('data',$data,  time() + 60 * 60 * 24 * 30);
-                ?>
+            function frameClick() {
+                //setcookie('data',$data,  time() + 60 * 60 * 24 * 30);
                 document.location.href = "./ditail";
-                <?
-            }
-            ?>
 
+            }
+
+        </script>
 
     </head>
     <body>
@@ -140,7 +139,7 @@
         <div class="row">
             <div class="col">
 
-                <div class="card" onclick="frameClick(0)">
+                <div class="card" onclick="frameClick()">
                     <?
                         $sql = "SELECT * FROM thema ";
                         //var_dump($sql);
@@ -155,13 +154,13 @@
 
                     ?>
                 </div>
-                <div class="card" onclick="frameClick(1)">
+                <div class="card" onclick="frameClick()">
                     <?
                         echo ($nemu["1"]["themavalue"]);
 
                     ?>
                 </div>
-                <div class="card" onclick="frameClick(2)">
+                <div class="card" onclick="frameClick()">
                     <?
                         echo ($nemu["2"]["themavalue"]);
 
