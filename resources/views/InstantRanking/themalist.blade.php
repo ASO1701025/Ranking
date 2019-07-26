@@ -155,7 +155,7 @@
                             var_dump($res);
                         $nemu = pg_fetch_array($res);
 
-                        var_dump($nemu);
+                        //var_dump($nemu);
                         }
                     ?>
                 </div>
