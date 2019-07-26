@@ -170,9 +170,21 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card" onclick="frameClick()"></div>
-                <div class="card" onclick="frameClick()"></div>
-                <div class="card" onclick="frameClick()"></div>
+                <div class="card" onclick="frameClick()">
+                    <?
+
+                    ?>
+                </div>
+                <div class="card" onclick="frameClick()">
+                    <?
+
+                    ?>
+                </div>
+                <div class="card" onclick="frameClick()">
+                    <?
+
+                    ?>
+                </div>
             </div>
 
         </div>
