@@ -169,9 +169,9 @@
             </div>
             <div class="col">
                 <div class="card" onclick="frameClick()">
-                    <?
-                    echo ($nemu["3"]["themavalue"]);
-                    ?>
+
+                    <? echo ($nemu["3"]["themavalue"]); ?>
+
                 </div>
                 <div class="card" onclick="frameClick()">
                     <?
