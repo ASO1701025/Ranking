@@ -10,7 +10,7 @@ if (strpos($_SERVER['HTTP_USER_AGENT'], 'iPhone') !== false) {
     {{-- 背景の色 --}}
     <head>
         {{-- top.cssを参照 --}}
-        <link rel="stylesheet" type="text/css" href="'instantrankingController@tocss" >
+        <link rel="stylesheet" type="text/css" href="top.css" >
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>TOP</title>
@@ -36,7 +36,7 @@ if (strpos($_SERVER['HTTP_USER_AGENT'], 'iPhone') !== false) {
                     echo "<br/>";
                 }
                 ?>
-                <img src="'instantrankingController@huku'" width="340" height="470"><br>
+                <img alt="テスト" src="hukurou.png" width="340" height="470"><br>
 
             </span>
             <!-- 空白 -->
