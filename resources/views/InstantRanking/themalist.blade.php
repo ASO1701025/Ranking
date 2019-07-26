@@ -140,7 +140,7 @@
         <div class="row">
             <div class="col">
 
-                <div class="card" onclick="frameClick($id = 0)">
+                <div class="card" onclick="frameClick(0)">
                     <?
                         $sql = "SELECT * FROM thema ";
                         //var_dump($sql);
@@ -155,13 +155,13 @@
 
                     ?>
                 </div>
-                <div class="card" onclick="frameClick($id = 1)">
+                <div class="card" onclick="frameClick(1)">
                     <?
                         echo ($nemu["1"]["themavalue"]);
 
                     ?>
                 </div>
-                <div class="card" onclick="frameClick($id = 2)">
+                <div class="card" onclick="frameClick(2)">
                     <?
                         echo ($nemu["2"]["themavalue"]);
 
