@@ -141,8 +141,9 @@
             if($res = pg_query($pg_conn,$sql)){
                 $hoge = pg_fetch_all($res);
             }
-            $table_cnt = "SELECT count(*) FROM thema";
+//            $table_cnt = "SELECT count(*) FROM thema";
 
+            $table_cnt= pg_query("SELECT count(*) FROM thema");
 
         echo ($table_cnt);
         ?>
