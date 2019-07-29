@@ -6,10 +6,11 @@
         #caption{color: #fb9209;}
         nav{
             width: 100%;
-        border-top: 1px solid orange;
-        border-bottom: 1px solid orange;
-        margin-bottom: 5px; /**/
+            border-top: 1px solid orange;
+            border-bottom: 1px solid orange;
+            margin-bottom: 5px; /**/
             overflow: hidden;
+            background-color: #FB9209;
         }
         nav ul{
             list-style: none;
