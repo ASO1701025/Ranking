@@ -141,9 +141,9 @@
             if($res = pg_query($pg_conn,$sql)){
                 $hoge = pg_fetch_all($res);
             }
-            $result = pg_query($pg_conn,"SELECT * FROM thema")
-            $rows = pg_num_rows($result)
-        echo $rows."row(s)";
+            $result = pg_query($pg_conn,"SELECT * FROM thema");
+            $rows = pg_num_rows($result);
+        echo ($rows)."row(s)";
         ?>
 
     </div>
