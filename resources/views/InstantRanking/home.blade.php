@@ -160,20 +160,19 @@ if (isset($_COOKIE["un"])) {
             </div>
         </div>
     </div>
-    <div class="topcard">
-        <p class="title1">タイトル</p>
-        <p class="content1">本文</p>
-        <p class="content1">本文</p>
-        <p class="content1">本文</p>
-        <p class="content1">本文</p>
-    <?
-//        $request = request();
-//        var_dump($request->session()->all());
-//
-//        echo $request->session()->get('name');
-    ?>
+    {{--<div class="topcard">--}}
+        {{--<p class="title1">タイトル</p>--}}
+        {{--<p class="content1">本文</p>--}}
+        {{--<p class="content1">本文</p>--}}
+        {{--<p class="content1">本文</p>--}}
+        {{--<p class="content1">本文</p>--}}
+    {{--<?--}}
+{{--//        $request = request();--}}
+{{--//        var_dump($request->session()->all());--}}
+{{--//        echo $request->session()->get('name');--}}
+    {{--?>--}}
 
-    </div>
+    {{--</div>--}}
     <div class="row">
         <div class="col">
             <div class="card">Card1</div>
