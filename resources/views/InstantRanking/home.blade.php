@@ -42,7 +42,7 @@
         }
         footer {
             position: fixed;
-            bottom: 0;
+            bottom: -20%;
             width: 100%;
             height: 100px;
         }
