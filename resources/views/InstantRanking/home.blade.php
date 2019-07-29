@@ -59,7 +59,7 @@
             flex-grow: 1;
             flex-shrink: 1;
 
-            width: 75%;
+            width: 100%;
             padding: 20px;
             box-sizing: border-box;
 
