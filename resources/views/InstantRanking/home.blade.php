@@ -126,13 +126,46 @@ if (isset($_COOKIE["un"])) {
     </p>
 </div>
 <div>
+    <div class="col">
+        <div class="row">
+            <div class="topcard">
+                <p class="title1">タイトル1</p>
+                <p class="content1">本文</p>
+                <p class="content1">本文</p>
+                <p class="content1">本文</p>
+                <p class="content1">本文</p>
+            </div>
+            <div class="topcard">
+                <p class="title1">タイトル2</p>
+                <p class="content1">本文</p>
+                <p class="content1">本文</p>
+                <p class="content1">本文</p>
+                <p class="content1">本文</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="topcard">
+                <p class="title1">タイトル3</p>
+                <p class="content1">本文</p>
+                <p class="content1">本文</p>
+                <p class="content1">本文</p>
+                <p class="content1">本文</p>
+            </div>
+            <div class="topcard">
+                <p class="title1">タイトル4</p>
+                <p class="content1">本文</p>
+                <p class="content1">本文</p>
+                <p class="content1">本文</p>
+                <p class="content1">本文</p>
+            </div>
+        </div>
+    </div>
     <div class="topcard">
         <p class="title1">タイトル</p>
         <p class="content1">本文</p>
         <p class="content1">本文</p>
         <p class="content1">本文</p>
         <p class="content1">本文</p>
-
     <?
 //        $request = request();
 //        var_dump($request->session()->all());
@@ -143,15 +176,14 @@ if (isset($_COOKIE["un"])) {
     </div>
     <div class="row">
         <div class="col">
-            <div class="card">Card1
-            </div>
+            <div class="card">Card1</div>
             <div class="card">Card2</div>
             <div class="card">Card3</div>
         </div>
         <div class="col">
-            <div class="card">Card3</div>
             <div class="card">Card4</div>
             <div class="card">Card5</div>
+            <div class="card">Card6</div>
         </div>
     </div>
 </div>
