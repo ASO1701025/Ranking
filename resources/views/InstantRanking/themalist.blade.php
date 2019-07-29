@@ -142,7 +142,7 @@
                 $hoge = pg_fetch_all($res);
             }
             $tablesize = count($sql);
-        echo "$tablesize";
+        echo ($tablesize);
         ?>
 
 
