@@ -166,12 +166,11 @@ if (isset($_COOKIE["un"])) {
         {{--<p class="content1">本文</p>--}}
         {{--<p class="content1">本文</p>--}}
         {{--<p class="content1">本文</p>--}}
-    {{--<?--}}
-{{--//        $request = request();--}}
-{{--//        var_dump($request->session()->all());--}}
-{{--//        echo $request->session()->get('name');--}}
-    {{--?>--}}
-
+    <?
+//        $request = request();
+//        var_dump($request->session()->all());
+//        echo $request->session()->get('name');
+    ?>
     {{--</div>--}}
     <div class="row">
         <div class="col">
