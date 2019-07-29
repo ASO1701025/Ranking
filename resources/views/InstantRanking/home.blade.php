@@ -126,8 +126,8 @@ if (isset($_COOKIE["un"])) {
     </p>
 </div>
 <div>
-    <div class="col">
-        <div class="row">
+    <div class="row">
+        <div class="col">
             <div class="topcard">
                 <p class="title1">タイトル1</p>
                 <p class="content1">本文</p>
@@ -143,7 +143,7 @@ if (isset($_COOKIE["un"])) {
                 <p class="content1">本文</p>
             </div>
         </div>
-        <div class="row">
+        <div class="col">
             <div class="topcard">
                 <p class="title1">タイトル3</p>
                 <p class="content1">本文</p>
