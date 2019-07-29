@@ -8,7 +8,7 @@
             width: 100%;
             border-top: 1px solid orange;
             border-bottom: 1px solid orange;
-            margin-bottom: 5px; /**/
+            margin-bottom: 0px; /**/
             overflow: hidden;
             background-color: #FB9209;
         }
