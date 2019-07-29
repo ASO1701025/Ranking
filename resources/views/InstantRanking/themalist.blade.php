@@ -143,7 +143,7 @@
             }
             $table_cnt = "SELECT count(*) FROM thema";
             if($res = pg_query($pg_conn,$table_cnt)){
-                $hoge2 = pg_fetch_all($res);
+                $hoge2 = pg_fetch_all($table_cnt);
             }
 
         echo ($hoge2);
