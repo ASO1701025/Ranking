@@ -28,12 +28,12 @@
         }
         nav a{
             display: block;
-        text-decoration: none;
-        color:#313131;
-        font-size: 110%;
-        letter-spacing: 5px;
-        font-weight: 400;
-        line-height: 45px;
+            text-decoration: none;
+            color:#313131;
+            font-size: 110%;
+            letter-spacing: 5px;
+            font-weight: 400;
+            line-height: 45px;
         }
         nav a:hover{
             background-color: orange;
@@ -42,18 +42,31 @@
         }
         footer {
             position: fixed;
-            bottom: -4%;
+            bottom: -5%;
             width: 100%;
             height: 100px;
         }
 
+        /*.topcard {*/
+            /*position: center;*/
+            /*top: auto;*/
+            /*margin: 100px;*/
+            /*border-radius: 5px;*/
+            /*background-color: #fff;*/
+            /*box-shadow: 0 3px 6px #ccc;*/
+        /*}*/
         .topcard {
-            position: center;
-            top: auto;
-            margin: 100px;
-            border-radius: 5px;
-            background-color: #fff;
-            box-shadow: 0 3px 6px #ccc;
+            flex-grow: 1;
+            flex-shrink: 1;
+
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+
+            box-shadow: rgba(0, 0, 0, .2) 1px 1px 5px;
+        }
+        .topcard:not(:last-child) {
+            margin-bottom: 20px;
         }
         .title1 {
             font-size: 150%;
