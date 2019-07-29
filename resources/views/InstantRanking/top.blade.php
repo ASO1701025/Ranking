@@ -36,7 +36,7 @@ if (strpos($_SERVER['HTTP_USER_AGENT'], 'iPhone') !== false) {
                     echo "<br/>";
                 }
                 ?>
-                <img alt="テスト" src="hukurou.png" width="340" height="470"><br>
+                <img alt="テスト" src="https://instantranking.s3-ap-northeast-1.amazonaws.com/logo.png" width="340" height="470"><br>
 
             </span>
             <!-- 空白 -->

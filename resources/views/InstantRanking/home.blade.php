@@ -37,8 +37,8 @@
         }
         nav a:hover{
             background-color: orange;
-        color: #fff;
-        transition: 0.5s;
+            color: #fff;
+            transition: 0.5s;
         }
         footer {
             position: fixed;
