@@ -136,7 +136,7 @@
 
         <p style="color: #fb9209">検索テーマ</p>
 
-        <?php
+        <?
             $sql = "SELECT * FROM thema";
             if($res = pg_query($pg_conn,$sql)){
                 $hoge = pg_fetch_all($res);
@@ -154,7 +154,7 @@
         {{--<div class="row">--}}
             {{--<div class="col">--}}
                 {{--<div class="card" onclick="frameClick()">--}}
-                    {{--<?--}}
+
                         {{--$sql = "SELECT * FROM thema ";--}}
                         {{--//var_dump($sql);--}}
 
@@ -166,19 +166,19 @@
 
                         {{--}--}}
 
-                    {{--?>--}}
+
                 {{--</div>--}}
                 {{--<div class="card" onclick="frameClick()">--}}
-                    {{--<?--}}
+
                         {{--echo ($nemu["1"]["themavalue"]);--}}
 
-                    {{--?>--}}
+
                 {{--</div>--}}
                 {{--<div class="card" onclick="frameClick()">--}}
-                    {{--<?--}}
+
                         {{--echo ($nemu["2"]["themavalue"]);--}}
 
-                    {{--?>--}}
+
                 {{--</div>--}}
             {{--</div>--}}
 
@@ -189,14 +189,14 @@
 
                 {{--</div>--}}
                 {{--<div class="card" onclick="frameClick()">--}}
-                    {{--<?--}}
 
-                    {{--?>--}}
+
+
                 {{--</div>--}}
                 {{--<div class="card" onclick="frameClick()">--}}
-                    {{--<?--}}
 
-                    {{--?>--}}
+
+
                 {{--</div>--}}
             {{--</div>--}}
 
