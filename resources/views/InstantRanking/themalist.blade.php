@@ -147,13 +147,13 @@
         ?>
 
         <div>
-            @for($i=$rows-1;$i>=0;$i--){
+            @for($i=$rows-1;$i>=0;$i--)
                 <?php
                 echo '<div class="card" onclick="frameClick()">';
                 echo $hoge["$i"]["themavalue"];
                 echo '</div>';
                 ?>
-            }@endfor
+            @endfor
 
         </div>
 
