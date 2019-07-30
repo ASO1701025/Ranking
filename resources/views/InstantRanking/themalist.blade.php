@@ -147,9 +147,9 @@
         ?>
 
         <div>
-            @for($i=$rows;$i>0;$i--){
+            @for($i=$rows-1;$i>=0;$i--){
                 <?php
-                echo $hoge["0"]["themavalue"];
+                echo $hoge["$i"]["themavalue"];
                 ?>
             }@endfor
 
