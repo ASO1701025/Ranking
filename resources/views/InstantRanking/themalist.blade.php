@@ -163,16 +163,20 @@
 
         <div>
             @for($i=$rows-1;$i>=0;$i--)
+                <div class="col">
                 @for($j=0;$j<=1;$j++)
-                <?php
-                    echo '<div class="card" onclick="frameClick()">';
-                    echo $hoge["$i"]["themavalue"];
-                    echo '</div>';
-                    if($i>0){
-                        $i--;
-                    }
-                ?>
+                    <div class="row">
+                        <?php
+                        echo '<div class="card" onclick="frameClick()">';
+                        echo $hoge["$i"]["themavalue"];
+                        echo '</div>';
+                        if($i>0){
+                            $i--;
+                        }
+                        ?>
+                    </div>
                 @endfor
+                </div>
             @endfor
 
         </div>
