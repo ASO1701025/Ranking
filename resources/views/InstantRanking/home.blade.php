@@ -129,8 +129,8 @@ if (isset($_COOKIE["un"])) {
     </p>
 </div>
 <div>
-    <div class="row">
-        <div class="col">
+    <div class="col">
+        <div class="row">
             <div class="topcard">
                 <p class="title1">タイトル1</p>
                 <p class="content1">本文</p>
@@ -175,8 +175,8 @@ if (isset($_COOKIE["un"])) {
 //        echo $request->session()->get('name');
     ?>
     {{--</div>--}}
-    <div class="row">
-        <div class="col">
+    <div class="col">
+        <div class="row">
             <div class="card">Card1</div>
             <div class="card">Card2</div>
             <div class="card">Card3</div>
