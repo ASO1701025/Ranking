@@ -77,18 +77,21 @@
             padding: 10px;
             color: #666;
         }
-        .row {
+        .col {
             display: flex;
             width: 100%;
         }
-        .col {
+
+        .row {
             flex-basis: 50%;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
         }
-        .col:not(:last-child) {
+
+        .row:not(:last-child){
             margin-right: 20px;
         }
+
         .card {
             flex-grow: 1;
             flex-shrink: 1;

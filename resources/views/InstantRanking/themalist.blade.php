@@ -4,60 +4,47 @@
         <style>
             #caption{color: #fb9209;}
             nav{
-                width: 100%;    /*横幅の指定*/
-                border-top: 1px solid orange;   /*上部の線の色を指定*/
-                border-bottom: 1px solid orange;    /*下部の線の色を指定*/
-                margin-bottom: 5px; /**/
-                overflow: hidden;   /*おまじない*/
+                width: 100%;
+                border-top: 1px solid orange;
+                border-bottom: 1px solid orange;
+                margin-bottom: 0px; /**/
+                overflow: hidden;
+                background-color: #FB9209;
             }
             nav ul{
                 list-style: none;
-                width: 60%; /*横幅の指定*/
-                margin-left: 20%;   /*左端から20%右側に動かす*/
+                width: 60%;
+                margin-left: 20%;
             }
             nav li{
-                width: calc(25% - 2px); /*横幅の指定（線の分をマイナスする）*/
-                border-left: 1px solid orange;  /*線を描く*/
-                text-align: center; /*文字を中央に*/
-                float: left;    /*左から並べる*/
+                width: calc(25% - 2px);
+                border-left: 1px solid orange;
+                text-align: center;
+                float: left;
             }
             nav li:last-child{
-                border-right: 1px solid orange; /*li要素の最後の物は右側に線を描く*/
+                border-right: 1px solid orange;
             }
             nav a{
-                display: block; /*1つのli全体にリンクを有効にする*/
-                text-decoration: none;  /*ブラウザ標準のリンク装飾をオフに*/
-                color:#313131;  /*文字色の変更*/
-                font-size: 110%;    /*フォントサイズの指定*/
-                letter-spacing: 5px;    /*文字と文字の間隔をあける*/
-                font-weight: 400;   /*文字の太さを調整*/
-                line-height: 45px;  /*行間の指定（ナビボタンの高さ指定）*/
+                display: block;
+                text-decoration: none;
+                color:#313131;
+                font-size: 110%;
+                letter-spacing: 5px;
+                font-weight: 400;
+                line-height: 45px;
             }
             nav a:hover{
-                background-color: orange;   /*背景色の指定*/
-                color: #fff;    /*文字色の変更*/
-                transition: 0.5s;   /*ホバー時の動きをなめらかにする*/
+                background-color: orange;
+                color: #fff;
+                transition: 0.5s;
             }
             footer {
                 position: fixed;
-                bottom: 0;
+                bottom: -5%;
                 width: 100%;
                 height: 100px;
             }
-
-            /*.row {*/
-                /*display: flex;*/
-                /*width: 100%;*/
-            /*}*/
-
-            /*.col {*/
-                /*flex-basis: 50%;*/
-                /*display: flex;*/
-                /*flex-direction: column;*/
-            /*}*/
-            /*.col:not(:last-child) {*/
-                /*margin-right: 20px;*/
-            /*}*/
 
             .col {
                 display: flex;
