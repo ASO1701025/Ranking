@@ -143,15 +143,15 @@
             }
             $result = pg_query($pg_conn,"SELECT * FROM thema");
             $rows = pg_num_rows($result);
-        echo ($rows)."row(s)";
+            echo ($rows)."row(s)";
         ?>
 
         <div>
-
-                {{--@foreach(){--}}
-                    {{----}}
-                {{--}--}}
-
+            @for($i=$rows;$i>0;$i--){
+                <?php
+                echo ($hoge[$i]["themavalue"])
+                ?>
+            }
 
         </div>
 
