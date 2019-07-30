@@ -45,17 +45,32 @@
                 height: 100px;
             }
 
-            .row {
+            /*.row {*/
+                /*display: flex;*/
+                /*width: 100%;*/
+            /*}*/
+
+            /*.col {*/
+                /*flex-basis: 50%;*/
+                /*display: flex;*/
+                /*flex-direction: column;*/
+            /*}*/
+            /*.col:not(:last-child) {*/
+                /*margin-right: 20px;*/
+            /*}*/
+
+            .col {
                 display: flex;
                 width: 100%;
             }
 
-            .col {
+            .row {
                 flex-basis: 50%;
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
             }
-            .col:not(:last-child) {
+
+            .row:not(:last-child){
                 margin-right: 20px;
             }
 
@@ -143,16 +158,19 @@
             }
             $result = pg_query($pg_conn,"SELECT * FROM thema");
             $rows = pg_num_rows($result);
-            echo ($rows)."row(s)";
+//            echo ($rows)."row(s)";
         ?>
 
         <div>
             @for($i=$rows-1;$i>=0;$i--)
+                @for($j=0;$j>=1;$j++)
                 <?php
-                echo '<div class="card" onclick="frameClick()">';
-                echo $hoge["$i"]["themavalue"];
-                echo '</div>';
+                    echo '<div class="card" onclick="frameClick()">';
+                    echo $hoge["$i"]["themavalue"];
+                    echo '</div>';
+                    $i--;
                 ?>
+                @endfor
             @endfor
 
         </div>
