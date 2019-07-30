@@ -170,7 +170,7 @@
                         echo '<div class="card" onclick="frameClick()">';
                         echo $hoge["$i"]["themavalue"];
                         echo '</div>';
-                        if($i>0){
+                        if($i>=0){
                             $i--;
                         }
                         ?>
