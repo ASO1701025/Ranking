@@ -151,7 +151,7 @@
                 <?php
                 echo ($hoge[$i]["themavalue"])
                 ?>
-            }
+            }@endfor
 
         </div>
 
