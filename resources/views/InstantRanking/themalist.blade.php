@@ -126,7 +126,7 @@
     <div align="center">
         <p>テーマ一覧</p>
         <p>
-            <a href="/post" style="color: #fb9209;text-decoration: none">+</a>
+            <a href="/post" style="color: #fb9209;text-decoration: none">テーマ投稿+</a>
             {{--<select name="genre">--}}
                 {{--<option value="食べ物">食べ物</option>--}}
                 {{--<option value="レジャー">レジャー</option>--}}
@@ -149,14 +149,15 @@
 //            echo ($rows)."row(s)";
         ?>
 
-        <div>あ
+        <div>
             @for($i=$rows-1;$i>=0;$i--)
                 <div class="col">
                 @for($j=0;$j<=1;$j++)
                     <div class="row">
                         <form action="./ranp" method="post">
                             <div class="card">
-                                <input type="text" name="thema" value='$hoge["$i"]["themavalue"]'>
+                                {{$hoge["$i"]["themavalue"]}}
+                                <input type="hidden" name="thema" value='$hoge["$i"]["themavalue"]'>
                             </div>
                         </form>
                         @if($j==0)
@@ -166,7 +167,6 @@
                 @endfor
                 </div>
             @endfor
-
         </div>
 
     </div>

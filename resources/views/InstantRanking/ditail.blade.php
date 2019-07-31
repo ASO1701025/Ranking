@@ -59,19 +59,20 @@
 //            }
 //            echo $nemu[$the]["themavalue"]
 //            ?>
-            ランキング
+            {{--ランキング--}}
         </h1>
         <div id="main" align="center">
-            <div class="text1" style="top: 17%;">１位<br><div class="box">ああああああああああああああ</div></div>
-            <br>
-            <div class="text1" style="top: 30%;">２位<br><div class="box">ああああああああああああああ</div></div>
-            <br>
-            <div class="text1" style="top: 43%;">３位<br><div class="box">ああああああああああああああ</div></div>
-            <br>
-            <div class="text1" style="top: 56%;">４位<br><div class="box">ああああああああああああああ</div></div>
-            <br>
-            <div class="text1" style="top: 69%;">５位<br><div class="box">ああああああああああああああ</div></div>
-            <br>
+
+            {{--<div class="text1" style="top: 17%;">１位<br><div class="box">ああああああああああああああ</div></div>--}}
+            {{--<br>--}}
+            {{--<div class="text1" style="top: 30%;">２位<br><div class="box">ああああああああああああああ</div></div>--}}
+            {{--<br>--}}
+            {{--<div class="text1" style="top: 43%;">３位<br><div class="box">ああああああああああああああ</div></div>--}}
+            {{--<br>--}}
+            {{--<div class="text1" style="top: 56%;">４位<br><div class="box">ああああああああああああああ</div></div>--}}
+            {{--<br>--}}
+            {{--<div class="text1" style="top: 69%;">５位<br><div class="box">ああああああああああああああ</div></div>--}}
+            {{--<br>--}}
             <div align="center">
             </div>
         </div>
