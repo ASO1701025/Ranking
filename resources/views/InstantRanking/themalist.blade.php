@@ -140,7 +140,7 @@
         <p style="color: #fb9209">検索テーマ</p>
 
         <?
-//            $sql_t = "SELECT * FROM thema";
+            $sql_t = "SELECT * FROM thema";
             if($res = pg_query($pg_conn,$sql_t)){
                 $hoge = pg_fetch_all($res);
             }
