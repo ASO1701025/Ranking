@@ -154,16 +154,14 @@
                 <div class="col">
                 @for($j=0;$j<=1;$j++)
                     <div class="row">
-                        <?php
-                            echo '<form action="./ranp" method="post">';
-                            echo '<div class="card" onclick="frameClick()">';
-                            echo $hoge["$i"]["themavalue"];
-                            echo '</div>';
-                            echo '</form>';
-                            if($j==0){
-                                $i--;
-                            }
-                        ?>
+                        <form action="./ranp" method="post">
+                            <div class="card">
+                                <input type="text" name="thema" value='$hoge["$i"]["themavalue"]'>
+                            </div>
+                        </form>
+                        @if($j==0)
+                            $i--
+                        @endif
                     </div>
                 @endfor
                 </div>
