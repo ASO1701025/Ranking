@@ -130,14 +130,16 @@ if (isset($_COOKIE["username"])) {
 </div>
 
 <?
-$sql_t = "SELECT * FROM thema";
-if($res = pg_query($pg_conn,$sql_t)){
-    $hoge = pg_fetch_all($res);
-}
+    $pg_conn = pg_connect("host=ec2-174-129-240-67.compute-1.amazonaws.com port=5432 dbname=d8hdi8o0nv2hqq user=idiprlkaujoahf password=b1459a0b24b0e4d1334f38a9a2cb9f81ad0a1ba719639bfb7e9b1ac0efd601ef");
 
-$result = pg_query($pg_conn,"SELECT * FROM thema");
-$rows = pg_num_rows($result);
-//            echo ($rows)."row(s)";
+    $sql_t = "SELECT * FROM thema";
+        if($res = pg_query($pg_conn,$sql_t)){
+            $hoge = pg_fetch_all($res);
+        }
+
+    $result = pg_query($pg_conn,"SELECT * FROM thema");
+    $rows = pg_num_rows($result);
+    //echo ($rows)."row(s)";
 ?>
 
 {{--<div>--}}
