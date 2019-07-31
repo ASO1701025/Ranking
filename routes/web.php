@@ -42,7 +42,7 @@ Route::get('/home', 'instantrankingController@home');
 
 Route::get('/ranking', 'instantrankingController@ranking');
 
-Route::get('/ranp', 'instantrankingController@rankingpost');
+Route::get('/ranp', 'instantrankingController@ranp');
 
 
 
