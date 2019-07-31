@@ -149,7 +149,7 @@
 //            echo ($rows)."row(s)";
         ?>
 
-        <div>
+        <div>あ
             @for($i=$rows-1;$i>=0;$i--)
                 <div class="col">
                 @for($j=0;$j<=1;$j++)
