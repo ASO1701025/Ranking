@@ -81,6 +81,7 @@
 
             function frameClick() {
                 //setcookie('data',$data,  time() + 60 * 60 * 24 * 30);
+
                 document.location.href = "./ranp";
 
             }
@@ -91,10 +92,10 @@
     <body>
 
     <?
-        if (isset($_COOKIE["un"])) {
+        if (isset($_COOKIE["username"])) {
             print "<p>";
-            print "ユーザネーム：".$_COOKIE["un"];
-            $user = $_COOKIE["un"];
+            print "ユーザネーム：".$_COOKIE["username"];
+            $user = $_COOKIE["username"];
             print "</p>";
 
             //DBの接続設定

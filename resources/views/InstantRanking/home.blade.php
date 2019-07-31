@@ -111,9 +111,9 @@
 
 {{--// 受け取り方--}}
 <?php
-if (isset($_COOKIE["un"])) {
+if (isset($_COOKIE["username"])) {
     print "<p>";
-    print "ユーザネーム：".$_COOKIE["un"];
+    print "ユーザネーム：".$_COOKIE["username"];
     print "</p>";
 }
 ?>
@@ -128,6 +128,18 @@ if (isset($_COOKIE["un"])) {
 
     </p>
 </div>
+
+<?
+$sql_t = "SELECT * FROM thema";
+if($res = pg_query($pg_conn,$sql_t)){
+    $hoge = pg_fetch_all($res);
+}
+$sql_r = "SELECT * FROM ra"
+$result = pg_query($pg_conn,"SELECT * FROM thema");
+$rows = pg_num_rows($result);
+//            echo ($rows)."row(s)";
+?>
+
 {{--<div>--}}
     {{--<div class="col">--}}
         {{--<div class="row">--}}

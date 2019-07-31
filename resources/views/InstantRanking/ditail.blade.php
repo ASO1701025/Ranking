@@ -28,9 +28,9 @@
     </head>
     <body>
         <?php
-        if (isset($_COOKIE["un"])) {
+        if (isset($_COOKIE["username"])) {
             print "<p>";
-            $user = $_COOKIE["un"];
+            $user = $_COOKIE["username"];
             print "</p>";
 
             //DBの接続設定

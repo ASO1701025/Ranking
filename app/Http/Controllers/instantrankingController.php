@@ -16,23 +16,19 @@ use Illuminate\Http\Request;
 
 class instantrankingController extends Controller
 {
-    public function index(Request $req)
-    {
-        if ($req->session()->has('name')) {
-            //
-            }
 
+    public function index(Request $req){
+
+        if ($req->session()->has('name')) {}
         // 値を保存
         $req->session()->put('key', 'value');
-    // 'name' というセッションキーに 'TEST' をセット
+        // 'name' というセッションキーに 'TEST' をセット
         $req->session()->put('name', 'だるい');
-
-    // セッション「name」の値を取得
+        // セッション「name」の値を取得
         $name = $req->session()->get('name');
-    // セッションの値を全て取得
+        // セッションの値を全て取得
         $data = $req->session()->all();
-
-    // 指定アイテムを削除
+        // 指定アイテムを削除
         $req->session()->forget('key');
     }
 

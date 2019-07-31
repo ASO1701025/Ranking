@@ -46,7 +46,7 @@
     {{--COOKIE渡し方--}}
     <?php
     // クッキーを送信（有効期限30日）
-    setcookie('un',$request->session()->get('name'),  time() + 60 * 60 * 24 * 30);
+    setcookie('username',$request->session()->get('name'),  time() + 60 * 60 * 24 * 30);
     setcookie('email',$email,  time() + 60 * 60 * 24 * 30);
     ?>
                 <?

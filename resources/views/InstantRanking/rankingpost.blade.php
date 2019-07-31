@@ -21,10 +21,10 @@
 <body>
 
 <?php
-if (isset($_COOKIE["un"])) {
-    $user = $_COOKIE["un"];
+if (isset($_COOKIE["username"])) {
+    $user = $_COOKIE["username"];
     print "<p>";
-    //print "ユーザネーム：".$_COOKIE["un"];
+    //print "ユーザネーム：".$_COOKIE["username"];
     print "</p>";
 }
 ?>
@@ -38,12 +38,7 @@ if (isset($_COOKIE["un"])) {
         <p>テーマ<br>
             <textarea name="thema" rows="2" cols="30" wrap="soft"></textarea>
         </p>
-        <p>ジャンル
-            <select name="genre">
-                <option value="1">食べ物</option>
-                <option value="2">レジャー</option>
-            </select>
-        </p>
+
         <input type="submit" value="投稿" id="button">
     </div>
 
@@ -59,7 +54,7 @@ if (isset($_COOKIE["un"])) {
 
         $time = date("Y/m/d H:i:s", strtotime('+14 day')) . "\n";
         $thema = $_POST['thema'];
-        $genle = $_POST['genre'];
+
 
         $pg_conn = pg_connect("host=ec2-174-129-240-67.compute-1.amazonaws.com port=5432 dbname=d8hdi8o0nv2hqq user=idiprlkaujoahf password=b1459a0b24b0e4d1334f38a9a2cb9f81ad0a1ba719639bfb7e9b1ac0efd601ef");
 
@@ -67,7 +62,7 @@ if (isset($_COOKIE["un"])) {
 
 
 
-            $sql = "INSERT INTO thema (themavalue,genrelid,timelimit,userid) VALUES('{$thema}' , '{$genle}' , '{$time}' , '{$user}' )";
+            $sql = "INSERT INTO voting (themavalue,genrelid,timelimit,userid) VALUES('{$thema}' , '{$genle}' , '{$time}' , '{$user}' )";
 
             var_dump($sql);
 

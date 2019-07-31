@@ -92,9 +92,9 @@
     <body>
 
         <?php
-        if (isset($_COOKIE["un"])) {
+        if (isset($_COOKIE["username"])) {
             print "<p>";
-            print "ユーザネーム：".$_COOKIE["un"];
+            print "ユーザネーム：".$_COOKIE["username"];
             print "</p>";
         }
 
