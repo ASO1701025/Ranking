@@ -81,7 +81,7 @@
 
             function frameClick() {
                 //setcookie('data',$data,  time() + 60 * 60 * 24 * 30);
-                document.location.href = "./ditail";
+                document.location.href = "./ranp";
 
             }
 
