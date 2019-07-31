@@ -99,7 +99,7 @@
             print "</p>";
 
             //DBの接続設定
-            $res = null; $pg_conn = null; $sql = null; $date = null;
+            $res = null; $pg_conn = null; $sql_t = null; $date = null;
             date_default_timezone_set('Asia/Tokyo'); $date=date("Y-m-d");
             $pg_conn = pg_connect("host=ec2-174-129-240-67.compute-1.amazonaws.com port=5432 dbname=d8hdi8o0nv2hqq user=idiprlkaujoahf password=b1459a0b24b0e4d1334f38a9a2cb9f81ad0a1ba719639bfb7e9b1ac0efd601ef");
 
@@ -107,7 +107,7 @@
             if($pg_conn){
 
                 //これを取得する分に書き換(,)
-                  $sql = "SELECT * FROM thema";
+                  $sql_t = "SELECT * FROM thema";
 //                var_dump($sql);
 //
 //                if($res = pg_query($pg_conn, $sql)){
@@ -140,7 +140,7 @@
         <p style="color: #fb9209">検索テーマ</p>
 
         <?
-            $sql_t = "SELECT * FROM thema";
+//            $sql_t = "SELECT * FROM thema";
             if($res = pg_query($pg_conn,$sql_t)){
                 $hoge = pg_fetch_all($res);
             }
@@ -155,12 +155,14 @@
                 @for($j=0;$j<=1;$j++)
                     <div class="row">
                         <?php
-                        echo '<div class="card" onclick="frameClick()">';
-                        echo $hoge["$i"]["themavalue"];
-                        echo '</div>';
-                        if($j==0){
-                            $i--;
-                        }
+                            echo '<form action="./ranp" method="post">';
+                            echo '<div class="card" onclick="frameClick()">';
+                            echo $hoge["$i"]["themavalue"];
+                            echo '</div>';
+                            echo '</form>';
+                            if($j==0){
+                                $i--;
+                            }
                         ?>
                     </div>
                 @endfor
