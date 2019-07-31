@@ -127,10 +127,10 @@
         <p>テーマ一覧</p>
         <p>
             <a href="/post" style="color: #fb9209;text-decoration: none">+</a>
-            <select name="genre">
-                <option value="食べ物">食べ物</option>
-                <option value="レジャー">レジャー</option>
-            </select>
+            {{--<select name="genre">--}}
+                {{--<option value="食べ物">食べ物</option>--}}
+                {{--<option value="レジャー">レジャー</option>--}}
+            {{--</select>--}}
         </p>
     </div>
 
@@ -140,8 +140,8 @@
         <p style="color: #fb9209">検索テーマ</p>
 
         <?
-            $sql = "SELECT * FROM thema";
-            if($res = pg_query($pg_conn,$sql)){
+            $sql_t = "SELECT * FROM thema";
+            if($res = pg_query($pg_conn,$sql_t)){
                 $hoge = pg_fetch_all($res);
             }
             $result = pg_query($pg_conn,"SELECT * FROM thema");
