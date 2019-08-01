@@ -68,12 +68,12 @@
         .topcard:not(:last-child) {
             margin-bottom: 20px;
         }
-        .title1 {
+        .title {
             font-size: 150%;
             margin: 10px;
             color: #444;
         }
-        .content1 {
+        .content {
             padding: 10px;
             color: #666;
         }
@@ -109,7 +109,7 @@
 </head>
 <body>
 
-{{--// 受け取り方--}}
+{{--受け取り方--}}
 <?php
 if (isset($_COOKIE["username"])) {
     print "<p>";
@@ -133,12 +133,18 @@ if (isset($_COOKIE["username"])) {
     $pg_conn = pg_connect("host=ec2-174-129-240-67.compute-1.amazonaws.com port=5432 dbname=d8hdi8o0nv2hqq user=idiprlkaujoahf password=b1459a0b24b0e4d1334f38a9a2cb9f81ad0a1ba719639bfb7e9b1ac0efd601ef");
 
     $sql_t = "SELECT * FROM thema";
-        if($res = pg_query($pg_conn,$sql_t)){
-            $hoge = pg_fetch_all($res);
-        }
+    if($res_t = pg_query($pg_conn,$sql_t)){
+        $hoge_t = pg_fetch_all($res_t);
+    }
+    $result_t = pg_query($pg_conn,"SELECT * FROM thema");
+    $rows_t = pg_num_rows($result_t);
 
-    $result = pg_query($pg_conn,"SELECT * FROM thema");
-    $rows = pg_num_rows($result);
+    $sql_r = "SELECT * FROM rakinginfomation,rankingitem";
+    if ($res_r = pg_query($pg_conn,$sql_r)){
+        $hoge_r = pg_fetch_all($res_r);
+    }
+    $result_r = pg_query($pg_conn,"SELECT * FROM rakinginfomation,rankingitem");
+    $rows_r = pg_num_rows($result_r);
     //echo ($rows)."row(s)";
 ?>
 
@@ -213,15 +219,46 @@ if (isset($_COOKIE["username"])) {
         </div>
     </div>
 </div>
+{{--ランキング一覧--}}
 <div>
-    @for($i=$rows-1;$i>=0;$i--)
+    <div class="col">
+        <div class="row">
+            <form action="/ditail" method="post">
+                <div class="title">
+                    {{$hoge_r["$row_r-1"]["rankingname"]}}
+                </div>
+                @for($i=0;$i<5;$i++)
+                    <div class="content">
+                        <p>{{$i+1}}.{{$hoge_r["$i"]["category"]}}</p>
+                    </div>
+                @endfor
+            </form>
+        </div>
+        <div class="row">
+            <form action="/ditail" method="post">
+                <div class="title">
+                    {{$hoge_r["$row_r-2"]["rankingname"]}}
+                </div>
+                @for($i=0;$i<5;$i++)
+                    <div class="content">
+                        <p>{{$i+1}}.{{$hoge_r["$i"]["category"]}}</p>
+                    </div>
+                @endfor
+            </form>
+        </div>
+    </div>
+</div>
+
+{{--テーマ一覧--}}
+<div>
+    @for($i=$rows_t-1;$i>=0;$i--)
         <div class="col">
             @for($j=0;$j<=1;$j++)
                 <div class="row">
                     <form action="./ranp" method="post">
                         <div class="card">
-                            {{$hoge["$i"]["themavalue"]}}
-                            <input type="hidden" name="thema" value='$hoge["$i"]["themavalue"]'>
+                            {{$hoge_t["$i"]["themavalue"]}}
+                            <input type="hidden" name="thema" value='$hoge_t["$i"]["themavalue"]'>
                         </div>
                     </form>
                     @if($j==0)
