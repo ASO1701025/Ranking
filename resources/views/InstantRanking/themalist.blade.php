@@ -149,25 +149,25 @@
 //            echo ($rows)."row(s)";
         ?>
 
-        <div>
-            @for($i=$rows-1;$i>=0;$i--)
-                <div class="col">
-                @for($j=0;$j<=1;$j++)
-                    <div class="row">
-                        <form action="./ranp" method="post">
-                            <div class="card">
-                                {{$hoge["$i"]["themavalue"]}}
-                                <input type="hidden" name="thema" value='$hoge["$i"]["themavalue"]'>
-                            </div>
-                        </form>
-                        @if($j==0)
-                            $i--
-                        @endif
-                    </div>
-                @endfor
-                </div>
-            @endfor
-        </div>
+        {{--<div>--}}
+            {{--@for($i=$rows-1;$i>=0;$i--)--}}
+                {{--<div class="col">--}}
+                {{--@for($j=0;$j<=1;$j++)--}}
+                    {{--<div class="row">--}}
+                        {{--<form action="./ranp" method="post">--}}
+                            {{--<div class="card">--}}
+                                {{--{{$hoge["$i"]["themavalue"]}}--}}
+                                {{--<input type="hidden" name="thema" value='$hoge["$i"]["themavalue"]'>--}}
+                            {{--</div>--}}
+                        {{--</form>--}}
+                        {{--@if($j==0)--}}
+                            {{--$i----}}
+                        {{--@endif--}}
+                    {{--</div>--}}
+                {{--@endfor--}}
+                {{--</div>--}}
+            {{--@endfor--}}
+        {{--</div>--}}
 
     </div>
 
